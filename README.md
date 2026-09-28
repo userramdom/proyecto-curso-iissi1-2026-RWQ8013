@@ -1,6 +1,6 @@
 # Título Proyecto
 
-## Miembros del grupo L5-AM
+## Miembros del grupo L5-5
 
 1. ROMERO OCAÑA, LAURA
 1. MUNOZ MÉRIDA, INÉS
