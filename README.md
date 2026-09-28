@@ -1,15 +1,18 @@
 # Título Proyecto
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L5-5
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. ROMERO OCAÑA, LAURA
+1. MUNOZ MÉRIDA, INÉS
+1. SANTAMARÍA PÉREZ, CLAUDIA
+1. VICENTE JEREZ, BEATRIZ
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de logística y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente la seguridad y el personal en tiempo real. 
+En este tipo de eventos podemos encontrar asistentes al festival que suelen ser jóvenes de entre 18 y 35 años, además de los patrocinadores, promotores y artistas que participan en el festival.
+Actualmente nos enfrentamos a problemas como la falta de información en tiempo real, como los horarios y las zonas dentro del recinto, la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
+El objetivo de este proyecto es diseñar e implementar un Sistema de Información web/móvil que automatice e integre la gestión del festival. Las expectativas de este proyecto son:
 
 ## 2. Glosario de términos
 
