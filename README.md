@@ -10,13 +10,19 @@
 ## 1. Introducción al problema
 
 El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de logística y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente la seguridad y el personal en tiempo real. 
+
 En este tipo de eventos podemos encontrar asistentes al festival que suelen ser jóvenes de entre 18 y 35 años, además de los patrocinadores, promotores y artistas que participan en el festival.
+
 Actualmente nos enfrentamos a problemas como la falta de información en tiempo real, como los horarios y las zonas dentro del recinto, la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
-El objetivo de este proyecto es diseñar e implementar un Sistema de Información web/móvil que automatice e integre la gestión del festival. Las expectativas de este proyecto son:
+El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario.
 
 ## 2. Glosario de términos
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+- Check-In: Proceso mediante el cual se escanea y valida la entrada de los asistentes en las entradas al recinto, autorizando su ingreso al festival y actualizando su estado como "presente". Si algún usuario intenta entrar en alguna zona que su tipo de entrada no autoriza dará error.
+- Autenticación: Proceso mediante el cual cada usuario inicia sesión en la interfaz para que el sistema verifique su identidad y le otorgue los permisos asociados a su rol.
+- Transacción cashless: Proceso de cobro mediante el escaneo de la pulsera/QR del asistente en el punto de venta. Al realizar una comprao o recarga se suma o resta del saldo asociado a su cuenta.
+- Frontend: Parte del sistema correspondiente a la interfaz gráfica con la que interactúan los usuarios.
+- Dashboard: Panel de control con toda la información sobre el festival en tiempo real al cual tienen acceso los organizadores del evento.
 
 ## 3. Visión general del sistema
 
