@@ -28,6 +28,31 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 
 ### 3.1. Requisitos generales
 
+#### R.G.01. Gestión centralizada de los eventos y su programación
+Como promotor del festival,
+quiero gestionar de forma centralizada la información de escenarios, artistas, horarios y zonas del recinto,
+para evitar la pérdida de datos y mantener toda la información coordinada.
+
+#### R.G.02. Agilización del acceso (check-in)
+Como personal de control y accesos,
+quiero disponer de un sistema de lectura y validación rápida de entradas y credenciales,
+para reducir las colas en la enrada del recinto y agilizar el flujo de asistenetes.
+
+#### R.G.03. Consulta de horarios y mapa en tiempo real
+Como asistente al festival,
+quiero consultar los horarios actualizados y localización de los escenarios,
+para organizar mi itinerario sin perderme ninguna actuación.
+
+#### R.G.04. Gestión de saldo y pagos cashless
+Como asistente al festival,
+quiero recargar saldo digital en mi perfil y realizar pagos escaneando mi credencial/pulsera,
+para evitar colas en los puntos de venta y no depender de dinero en efectivo.
+
+#### R.G.05. Monitorización de aforo e incidencias en timepo real
+Como promotor del festival,
+quiero visualizar datos del aforo del recinto en tiempo real y las ventas por zona,
+para garantizar la seguridad, evitar saturaciones y tomar decisiones operativas durante el evento.
+
 ### 3.2. Usuarios del sistema
 
 ## 4. Catálogo de requisitos
