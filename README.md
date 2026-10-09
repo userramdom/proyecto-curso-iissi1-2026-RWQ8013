@@ -19,7 +19,7 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 ## 2. Glosario de términos
 
 - Check-In: Proceso mediante el cual se escanea y valida la entrada de los asistentes en las entradas al recinto, autorizando su ingreso al festival y actualizando su estado como "presente". Si algún usuario intenta entrar en alguna zona que su tipo de entrada no autoriza dará error.
-- Autenticación: Proceso mediante el cual cada usuario inicia sesión en la interfaz para que el sistema verifique su identidad y le otorgue los permisos asociados a su rol.
+- Autentificación: Proceso mediante el cual cada usuario inicia sesión en la interfaz para que el sistema verifique su identidad y le otorgue los permisos asociados a su rol.
 - Transacción cashless: Proceso de cobro mediante el escaneo de la pulsera/QR del asistente en el punto de venta. Al realizar una comprao o recarga se suma o resta del saldo asociado a su cuenta.
 - Frontend: Parte del sistema correspondiente a la interfaz gráfica con la que interactúan los usuarios.
 - Dashboard: Panel de control con toda la información sobre el festival en tiempo real al cual tienen acceso los organizadores del evento.
@@ -54,6 +54,15 @@ quiero visualizar datos del aforo del recinto en tiempo real y las ventas por zo
 para garantizar la seguridad, evitar saturaciones y tomar decisiones operativas durante el evento.
 
 ### 3.2. Usuarios del sistema
+
+### PROMOTOR DE LOS FESTIVALES
+Gestionar el recinto del festival, aforo, patrocinadores, organización de los escenarios, cantidad de artistas que asistiran al festival.
+
+### ASISTENTES DE LOS FESTIVALES
+Comprobar localizacion de cada concierto, metodos de pagos dentro del recinto, horarios de los conciertos, localizacion de las entradas al recinto. 
+
+### PERSONAL DE CONTROL Y ACCESO 
+Gestionar las entradas de los asistentes, control de las entradas/salidas del recinto. 
 
 ## 4. Catálogo de requisitos
 
