@@ -9,12 +9,13 @@
 
 ## 1. Introducción al problema
 
-El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de logística y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente la seguridad y el personal en tiempo real. 
+El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de organizacion y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente una gran cantidad de elementos (artistas, patrocinadores, asistentes, seguridad, etc) en tiempo real. 
 
 En este tipo de eventos podemos encontrar asistentes al festival que suelen ser jóvenes de entre 18 y 35 años, además de los patrocinadores, promotores y artistas que participan en el festival.
 
-Actualmente nos enfrentamos a problemas como la falta de información en tiempo real, como los horarios y las zonas dentro del recinto, la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
-El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario.
+Actualmente nos enfrentamos a problemas como la falta de información en tiempo real (como los horarios y las zonas dentro del recinto), la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
+
+El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario. De esta forma, por un lado los asistentes podran acceder a informacion a tiempo real, consultar entradas, horarios, etc; y los promotores podran usarla en forma de ayuda para organizar y administrar los eventos comprobando en tiempo real el aforo, la disponiviledad de los recintos, etc.
 
 ## 2. Glosario de términos
 
@@ -146,6 +147,37 @@ Tanto como promotor del evento que como personal de control y acceso quiero sabe
 - Control de todas las entradas/salidas de cada recinto 
 
 
+##### R.I.04. Informacion sobre las entradas sus tipos y el acceso de cada una 
+
+Como asistente al festival quiero poder consultar lo siguiente:
+
+- Disponivilidad de entradas
+
+- Zonas disponibles con cada entrada
+
+- Precio de cada entrada 
+
+Como promotor y como personal de control y acceso me gustaria saber:
+
+- El estado de la entrada
+
+-Identificacion de la entrada 
+
+- Actualizacion periodica en tiempo reac de cuantas personas van entrando al evento.
+
+
+##### R.I.05. Informacion sobre los pagos y comercios en el evento  
+
+Como asistente al evento me gustaria saber:
+
+- Saldo disponible
+
+- Historial de recargas y operaciones realizadas 
+
+- Verificacion de las transacciones 
+
+
+  
 #### 4.1.2. Reglas de negocio
 
 ##### R.N.01. Título regla negocio
