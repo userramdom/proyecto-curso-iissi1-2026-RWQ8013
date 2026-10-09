@@ -68,30 +68,83 @@ Gestionar las entradas de los asistentes, control de las entradas/salidas del re
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Título requisito funcional
+#### R.F.01. Registro de los asistentes
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para complar sus entradas y tener un contro de quien accede al festival.
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
+- Dos usuarios no pueden registrase con el mismo correo electrónico, ni se pueden llamar de la misma forma (nombres y apellidos iguales) y tampoco pueden tener la misma documentación. 
+- Los asistentesdeben ser mayores de edad (18 años o mas).
 - Se debe aplicar la regla de negocio R.N.XX.
-- ...
+
+
+#### R.F.01. Organizacion del festival
+
+Como promotor de los festivales quiero organizar los distintos recintos alrededor de españa, a los artistas y patrocinadores que participaran en dicho evento y las distintas zonas de escenario que habra en el festival para tener el control de la asistencia de los artistas en cada festival ademas de los afroros en cada recinto y localizacion de los conciertos.
+
+**Prueba de aceptación**
+- Un artistas no pueden estar en mas de un escenario a la misma hora, ni durante la duracion del conciento a dicha hora. Además de que no podria estar el mismo dia en dos festivales de diferentes localizaciones. 
+- Los asistentes al concierto no pueden superar el aforo del recinto.
+- Se debe aplicar la regla de negocio ...
+  
+
+#### R.F.01. Método de pago 
+Como comercio dentro del festival y como asistente al mismo quiero metodos de pago fiables y rapidos para no perder dinero y agilizar la compra venta en el festival 
+
+**Prueba de aceptación**
+- Debe tener saldo suficiente para hacer la compra.
+
+  
+
+#### R.F.01. Control de entrada 
+Como personal de control y acceso al festival quiero un metodo de identificacion rapido para garantoizar que el asistente tiene entrada y cumple los requisitos para entrar.
+
+**Prueba de aceptación**
+- Cuando pasa la entrada marca como "Entrada", una vez con eso la persona que entra no debe tener esa marca.
+- Debe entrar por la zona correcta que marque su entrada
+- Su informacion identificadora debe ser valida  
+
 
 #### 4.1.1. Requisitos de información
 
-##### R.I.01. Título requisito de información
+##### R.I.01. Información sobre el festival 
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como asistente al festival 
+quiero saber la siguente informacion sobre el festival: 
 
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
+- Lugar del festival
+  
+- Los artistas que asistiran al evento
+  
+- Por donde debo entrar al evento
+  
+- Los horarios de cada actuación
+
+
+##### R.I.02. Informacion sobre la disponivilidad para organizar el festival 
+
+Como promotor del festival 
+quiero saber la siguente información a la hora de organizar: 
+
+- Aforo de los recintos disponibles para organizar los festivales.
+  
+- Los artistas disponibles.
+  
+- Entradas y seguridad necesaria en el recinto 
+  
+- Financiacion (patrocinadores) necesaria.
+
+-Cantidad de escenarios necesarios dentro de cada recinto.
+
+
+##### R.I.03. Informacion sobre los asistentes a los festivales  
+
+Tanto como promotor del evento que como personal de control y acceso quiero saber la siguiente informacion: 
+
+- Informacion sobre la identidad de los asistentes (nombres y apellidos, correo, documentacion, etc)
+
+- Control de todas las entradas/salidas de cada recinto 
+
 
 #### 4.1.2. Reglas de negocio
 
