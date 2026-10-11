@@ -1,11 +1,11 @@
-# Título Proyecto
+# Sistema de gestión de festivales de música
 
 ## Miembros del grupo L5-5
 
 1. ROMERO OCAÑA, LAURA
-1. MUNOZ MÉRIDA, INÉS
-1. SANTAMARÍA PÉREZ, CLAUDIA
-1. VICENTE JEREZ, BEATRIZ
+2. MUNOZ MÉRIDA, INÉS
+3. SANTAMARÍA PÉREZ, CLAUDIA
+4. VICENTE JEREZ, BEATRIZ
 
 ## 1. Introducción al problema
 
@@ -185,6 +185,97 @@ Como asistente al evento me gustaria saber:
 Descripción de la regla de negocio.
 
 ### 4.2. Mapa de historias de usuario (opcional)
+El mapa de historias de usuario organiza las necesidades del sistema por actividades principales, denominadas épicas. Cada historia identifica al usuario, la acción que necesita realizar y el objetivo que persigue. El sistema contempla la gestión de varios festivales, cada uno con su propia programación, recinto y asistentes.
+
+### Organización del mapa
+
+Las actividades se ordenan siguiendo el recorrido de cada tipo de usuario:
+
+| Usuario | Preparación | Participación y operación | Seguimiento |
+| --- | --- | --- | --- |
+| Promotor de los festivales | Consultar recintos, organizar escenarios y programar actuaciones. | Consultar la programación y supervisar el aforo. | Consultar las ventas por zona. |
+| Asistente a los festivales | Registrarse, consultar festivales y adquirir entradas. | Consultar horarios y escenarios, acceder al recinto y utilizar el saldo cashless. | Consultar el saldo y el historial de operaciones. |
+| Personal de control y acceso | Consultar los datos y permisos de las entradas. | Validar entradas y registrar accesos y salidas. | Consultar los registros de entradas y salidas. |
+
+### Épica 1. Organización de festivales y programación
+
+Relacionada con R.G.01: Gestión centralizada de los eventos y su programación.
+
+#### H.U.01. Consulta de recintos
+
+Como promotor de los festivales, quiero consultar la ubicación, el aforo y la disponibilidad de los recintos, para seleccionar un espacio adecuado para cada festival.
+
+#### H.U.02. Organización de escenarios
+
+Como promotor de los festivales, quiero organizar los escenarios y las zonas del recinto de cada festival, para distribuir las actuaciones y mantener identificados los espacios del evento.
+
+#### H.U.03. Programación de actuaciones
+
+Como promotor de los festivales, quiero asignar los artistas a las actuaciones de cada festival e indicar su escenario y horario, para mantener una programación coordinada.
+
+### Épica 2. Consulta de festivales y programación
+
+Relacionada con R.G.03: Consulta de horarios y mapa en tiempo real.
+
+#### H.U.04. Consulta de festivales
+
+Como asistente a los festivales, quiero consultar los distintos festivales y sus datos de ubicación y programación, para elegir a cuáles asistir.
+
+#### H.U.05. Consulta de horarios
+
+Como asistente a los festivales, quiero consultar los horarios actualizados de las actuaciones de un festival, para organizar los conciertos que quiero ver.
+
+#### H.U.06. Localización de escenarios y accesos
+
+Como asistente a los festivales, quiero consultar la ubicación de los escenarios y de los accesos al recinto, para orientarme dentro del festival.
+
+### Épica 3. Gestión de entradas y control de acceso
+
+Relacionada con R.G.02: Agilización del acceso (check-in).
+
+#### H.U.07. Registro de asistentes
+
+Como asistente a los festivales, quiero registrarme con mis datos personales, para poder adquirir entradas y quedar identificado en el sistema.
+
+#### H.U.08. Consulta y adquisición de entradas
+
+Como asistente a los festivales, quiero consultar la disponibilidad, el precio y las zonas autorizadas de cada tipo de entrada y adquirir la que me interese, para asistir al festival con el acceso adecuado.
+
+#### H.U.09. Validación de entradas
+
+Como personal de control y acceso, quiero comprobar la identidad del asistente, la validez de su entrada y las zonas que autoriza, para permitir únicamente los accesos que correspondan.
+
+#### H.U.10. Registro de entradas y salidas
+
+Como personal de control y acceso, quiero registrar y consultar las entradas y salidas de los asistentes de cada recinto, para mantener actualizado el control de acceso al festival.
+
+### Épica 4. Gestión de saldo y pagos cashless
+
+Relacionada con R.G.04: Gestión de saldo y pagos cashless.
+
+#### H.U.11. Consulta y recarga de saldo
+
+Como asistente a los festivales, quiero consultar y recargar mi saldo cashless, para disponer de dinero suficiente para realizar compras dentro del recinto.
+
+#### H.U.12. Pago mediante credencial o pulsera
+
+Como asistente a los festivales, quiero realizar pagos utilizando mi credencial o pulsera y el saldo disponible, para comprar dentro del recinto sin utilizar dinero en efectivo.
+
+#### H.U.13. Consulta del historial de operaciones
+
+Como asistente a los festivales, quiero consultar mis recargas y pagos realizados, para comprobar los movimientos de mi saldo y verificar las transacciones.
+
+### Épica 5. Seguimiento del festival
+
+Relacionada con R.G.05: Monitorización de aforo e incidencias en tiempo real.
+
+#### H.U.14. Consulta del aforo
+
+Como promotor de los festivales, quiero consultar el número de asistentes presentes en el recinto de cada festival, para supervisar la ocupación y detectar posibles saturaciones.
+
+#### H.U.15. Consulta de ventas por zona
+
+Como promotor de los festivales, quiero consultar las ventas realizadas en las distintas zonas del recinto, para supervisar la actividad comercial durante el festival.
 
 ### 4.3. Requisitos no funcionales (opcional)
 
