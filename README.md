@@ -237,31 +237,43 @@ Relacionada con R.G.02: Agilización del acceso (check-in).
 
 Como asistente a los festivales, quiero registrarme con mis datos personales, para poder adquirir entradas y quedar identificado en el sistema.
 
-#### H.U.08. Consulta y adquisición de entradas
+#### H.U.08. Consulta de entradas
 
-Como asistente a los festivales, quiero consultar la disponibilidad, el precio y las zonas autorizadas de cada tipo de entrada y adquirir la que me interese, para asistir al festival con el acceso adecuado.
+Como asistente a los festivales, quiero consultar la disponibilidad, el precio y las zonas autorizadas de cada tipo de entrada, para elegir la que mejor se adapte a mis necesidades.
 
-#### H.U.09. Validación de entradas
+#### H.U.09. Adquisición de entradas
+
+Como asistente a los festivales, quiero adquirir una entrada para el festival seleccionado, para poder asistir y acceder a las zonas que incluye.
+
+#### H.U.10. Validación de entradas
 
 Como personal de control y acceso, quiero comprobar la identidad del asistente, la validez de su entrada y las zonas que autoriza, para permitir únicamente los accesos que correspondan.
 
-#### H.U.10. Registro de entradas y salidas
+#### H.U.11. Registro de entradas y salidas
 
-Como personal de control y acceso, quiero registrar y consultar las entradas y salidas de los asistentes de cada recinto, para mantener actualizado el control de acceso al festival.
+Como personal de control y acceso, quiero registrar las entradas y salidas de los asistentes de cada recinto, para mantener actualizado el control de acceso al festival.
+
+#### H.U.12. Consulta de registros de acceso
+
+Como personal de control y acceso, quiero consultar los registros de entradas y salidas de cada festival, para comprobar los accesos realizados.
 
 ### Épica 4. Gestión de saldo y pagos cashless
 
 Relacionada con R.G.04: Gestión de saldo y pagos cashless.
 
-#### H.U.11. Consulta y recarga de saldo
+#### H.U.13. Consulta de saldo
 
-Como asistente a los festivales, quiero consultar y recargar mi saldo cashless, para disponer de dinero suficiente para realizar compras dentro del recinto.
+Como asistente a los festivales, quiero consultar mi saldo cashless disponible, para saber cuánto puedo gastar dentro del recinto.
 
-#### H.U.12. Pago mediante credencial o pulsera
+#### H.U.14. Recarga de saldo
+
+Como asistente a los festivales, quiero recargar mi saldo cashless, para disponer de dinero suficiente para realizar compras dentro del recinto.
+
+#### H.U.15. Pago mediante credencial o pulsera
 
 Como asistente a los festivales, quiero realizar pagos utilizando mi credencial o pulsera y el saldo disponible, para comprar dentro del recinto sin utilizar dinero en efectivo.
 
-#### H.U.13. Consulta del historial de operaciones
+#### H.U.16. Consulta del historial de operaciones
 
 Como asistente a los festivales, quiero consultar mis recargas y pagos realizados, para comprobar los movimientos de mi saldo y verificar las transacciones.
 
@@ -269,11 +281,11 @@ Como asistente a los festivales, quiero consultar mis recargas y pagos realizado
 
 Relacionada con R.G.05: Monitorización de aforo e incidencias en tiempo real.
 
-#### H.U.14. Consulta del aforo
+#### H.U.17. Consulta del aforo
 
 Como promotor de los festivales, quiero consultar el número de asistentes presentes en el recinto de cada festival, para supervisar la ocupación y detectar posibles saturaciones.
 
-#### H.U.15. Consulta de ventas por zona
+#### H.U.18. Consulta de ventas por zona
 
 Como promotor de los festivales, quiero consultar las ventas realizadas en las distintas zonas del recinto, para supervisar la actividad comercial durante el festival.
 
