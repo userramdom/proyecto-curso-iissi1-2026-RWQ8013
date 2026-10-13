@@ -45,9 +45,8 @@ quiero consultar los horarios actualizados y localización de los escenarios,
 para organizar mi itinerario sin perderme ninguna actuación.
 
 #### R.G.04. Gestión de saldo y pagos cashless
-Como asistente al festival,
-quiero recargar saldo digital en mi perfil y realizar pagos escaneando mi credencial/pulsera,
-para evitar colas en los puntos de venta y no depender de dinero en efectivo.
+Como asistente al festival, quiero poder recargar saldo digital en mi perfil y realizar pagos mediante el escaneo de mi credencial o pulsera, para comprar comida, bebida y otros productos de forma rápida, sencilla y segura.
+Además, quiero poder consultar en todo momento el saldo disponible y los movimientos realizados para llevar un control de mis gastos durante el evento. De esta manera, podré reducir el tiempo de espera en los puntos de venta, evitar el uso de dinero en efectivo y disfrutar del festival con mayor comodidad,sin tener que preocuparme constantemente por llevar dinero encima.
 
 #### R.G.05. Monitorización de aforo e incidencias en timepo real
 Como promotor del festival,
