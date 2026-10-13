@@ -306,10 +306,22 @@ Como promotor de los festivales, quiero consultar las ventas realizadas en las d
 
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+**R.N.F. 01. Seguridad y protección de los datoss personales**
+
+Como promotor del festival, quiero que los datos personales de los asistentes estén protegidos y que únicamente puedan acceder a ellos los usuarios autorizados, para garantizar así su privacidad y evitar accesos no permitidos. Además, quiero que la información almaceada en el sistema se gestione de forma segura, especialmente los datos relacionados con el registro de usuario y la compra de entradas, además del pago con la pulsera.
+
+**R.N.F. 02. Rendimiento del sistema**
+
+Como promotor del festival, quiero que las consultas relacionadas con las entradas, el aforo y la información de los asistentes se realicen en un tiempo razonable, para gestionar el evento de forma eficiente. Asimismo, el sistema debe funcionar correctamente cuando varios usuarios lo utilicen al mismo tiempo, evitando así retrasos excesivos y facilitando el acceso a la información tanto a los organizadores como a los asistentes.
+
+**R.N.F. 03. Facilidad de uso **
+
+Como asistente al festival, quiero que la plataforma sea sencilla e intuitiva, para poder consultar fácilmente la información sobre las entradas, los horarios de los conciertos y la ubicación exacta de los escenarios. Además, quiero que los diferentes apartados estén organizados de forma clara, para encontrar rápidamente la información que necesito sin tener conocimientos técnicos previos.
+
+**R.N.F. 04. Compatibilidad con diferentes dispositivos**
+
+Como asistente al festival, quiero poder acceeder a la plataforma desde diferentes dispositivos, como móviles, tabletas y ordenadores, tanto desde IOS como con Android u otros. Para poder consultar toda la información desde cualquier punto y utilizar el dispositivo que me resulte más cómodo.
+
 
 -- fin entregable 1 --
 
