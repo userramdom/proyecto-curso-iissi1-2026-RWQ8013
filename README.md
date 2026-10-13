@@ -11,7 +11,7 @@
 
 El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de organizacion y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente una gran cantidad de elementos (artistas, patrocinadores, asistentes, seguridad, etc) en tiempo real. 
 
-En este tipo de eventos podemos encontrar asistentes al festival que suelen ser jóvenes de entre 18 y 35 años, además de los patrocinadores, promotores y artistas que participan en el festival.
+En este tipo de eventos podemos identificar diferentes perfiles de usuarios. Por un lado, se encuentran los asistentes al festival, que suelen ser principalmente jóvenes de entre 18 y 35 años interesados en la música y en disfrutar de este tipo de experiencias. Por otro lado, participan los promotores, que se encargan de organizar y coordinar el evento; los patrocinadores, que contribuyen a su financiación y promoción; y los artistas, que ofrecen las actuaciones musicales. Cada uno de estos perfiles tiene necesidades diferentes, por lo que es importante tenerlos en cuenta a la hora de diseñar el sistema de gestión delfestival.
 
 Actualmente nos enfrentamos a problemas como la falta de información en tiempo real (como los horarios y las zonas dentro del recinto), la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
 
