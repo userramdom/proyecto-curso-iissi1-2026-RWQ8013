@@ -199,115 +199,166 @@ Como asistente al evento me gustaria saber:
 
   
 #### 4.1.2. Reglas de negocio
+##### R.N.01. Datos únicos de los asistentes
+
+No puede haber dos asistentes registrados con el mismo correo electrónico o documento de identidad. Sí pueden tener el mismo nombre y apellidos si sus correos y documentos son distintos.
+
+**Pruebas de aceptación**
+
+- Dos asistentes tienen el mismo nombre, pero correos y documentos distintos: el sistema permite ambos registros.
+- Un asistente intenta registrarse con un correo ya registrado: el sistema rechaza el registro.
+- Un asistente intenta registrarse con un documento ya registrado: el sistema rechaza el registro.
+
+##### R.N.02. Edad mínima para registrarse
+
+En nuestro proyecto, los asistentes deben tener al menos 18 años en el momento de registrarse.
+
+**Pruebas de aceptación**
+
+- Una persona de 17 años intenta registrarse: el sistema rechaza el registro.
+- Una persona cumple 18 años el día del registro: el sistema permite el registro si cumple las demás condiciones.
+- Una persona mayor de 18 años intenta registrarse: el sistema permite el registro si cumple las demás condiciones.
+
+##### R.N.03. Entrada válida para el festival
+
+La entrada debe ser válida, pertenecer al asistente y corresponder al festival y a la fecha del acceso.
+
+**Pruebas de aceptación**
+
+- La entrada cumple todas estas condiciones: supera esta comprobación y se revisan las demás reglas de acceso.
+- Se intenta acceder con una entrada de otro festival, de otra fecha o asociada a otra persona: en cada caso, el sistema rechaza el acceso.
+- Se presenta una entrada anulada o que no existe: el sistema rechaza el acceso.
+
+##### R.N.04. Acceso a las zonas autorizadas
+
+Los asistentes solo pueden acceder a las zonas incluidas en su tipo de entrada.
+
+**Pruebas de aceptación**
+
+- Un asistente solicita acceder a una zona incluida en su entrada: supera esta comprobación si también cumple las demás condiciones de acceso.
+- Un asistente con una entrada general que no incluye la zona VIP intenta acceder a ella: el sistema rechaza el acceso a esa zona.
+
+##### R.N.05. Registro de entradas y salidas
+
+Un asistente que ya aparece dentro del recinto no puede registrar otra entrada hasta que se registre su salida. Cada entrada aceptada aumenta en uno el número de personas presentes y cada salida válida lo disminuye en uno. No se puede registrar una salida de alguien que no aparece dentro.
+
+**Pruebas de aceptación**
+
+- Un asistente realiza un acceso autorizado y después sale: el sistema registra ambos movimientos, aumenta en uno el número de personas presentes al entrar y lo disminuye en uno al salir.
+- Un asistente que ya está dentro intenta registrar otra entrada: el sistema la rechaza y el número de personas presentes no cambia.
+- Se intenta registrar la salida de alguien que no aparece dentro: el sistema la rechaza y el número de personas presentes no cambia.
 
 ##### R.N.01. Título regla negocio
 
 Descripción de la regla de negocio.
 
 ### 4.2. Mapa de historias de usuario (opcional)
-El mapa de historias de usuario organiza las necesidades del sistema por actividades principales, denominadas épicas. Cada historia identifica al usuario, la acción que necesita realizar y el objetivo que persigue. El sistema contempla la gestión de varios festivales, cada uno con su propia programación, recinto y asistentes.
 
-### Organización del mapa
+Este mapa organiza lo que necesita hacer cada usuario en el sistema. Las historias se agrupan por temas, llamados épicas. Cada historia explica quién realiza una acción, qué quiere hacer y para qué.
 
-Las actividades se ordenan siguiendo el recorrido de cada tipo de usuario:
+El sistema permite gestionar varios festivales, cada uno con sus artistas, actuaciones, escenarios, entradas y asistentes.
 
-| Usuario | Preparación | Participación y operación | Seguimiento |
+#### Organización del mapa
+
+La siguiente tabla resume las actividades de cada usuario:
+
+| Usuario | Antes del festival | Durante el festival | Consultas de seguimiento |
 | --- | --- | --- | --- |
-| Promotor de los festivales | Consultar recintos, organizar escenarios y programar actuaciones. | Consultar la programación y supervisar el aforo. | Consultar las ventas por zona. |
-| Asistente a los festivales | Registrarse, consultar festivales y adquirir entradas. | Consultar horarios y escenarios, acceder al recinto y utilizar el saldo cashless. | Consultar el saldo y el historial de operaciones. |
-| Personal de control y acceso | Consultar los datos y permisos de las entradas. | Validar entradas y registrar accesos y salidas. | Consultar los registros de entradas y salidas. |
+| Promotor | Consultar recintos, organizar escenarios y preparar los horarios de las actuaciones. | Supervisar la programación y el aforo. | Consultar las ventas por zona. |
+| Asistente | Registrarse, consultar festivales y comprar una entrada. | Consultar horarios y escenarios, acceder al recinto y pagar con su saldo. | Consultar su saldo y sus operaciones. |
+| Personal de control y acceso | Comprobar la información y los permisos de las entradas. | Validar entradas y registrar entradas y salidas. | Consultar los registros de acceso. |
 
-### Épica 1. Organización de festivales y programación
+#### Épica 1. Organización de festivales y programación
 
 Relacionada con R.G.01: Gestión centralizada de los eventos y su programación.
 
-#### H.U.01. Consulta de recintos
+##### H.U.01. Consulta de recintos
 
-Como promotor de los festivales, quiero consultar la ubicación, el aforo y la disponibilidad de los recintos, para seleccionar un espacio adecuado para cada festival.
+Como promotor, quiero consultar la ubicación, el aforo y la disponibilidad de los recintos, para elegir dónde celebrar cada festival.
 
-#### H.U.02. Organización de escenarios
+##### H.U.02. Organización de escenarios
 
-Como promotor de los festivales, quiero organizar los escenarios y las zonas del recinto de cada festival, para distribuir las actuaciones y mantener identificados los espacios del evento.
+Como promotor, quiero organizar los escenarios y las zonas de cada festival, para distribuir las actuaciones dentro del recinto.
 
-#### H.U.03. Programación de actuaciones
+##### H.U.03. Programación de actuaciones
 
-Como promotor de los festivales, quiero asignar los artistas a las actuaciones de cada festival e indicar su escenario y horario, para mantener una programación coordinada.
+Como promotor, quiero asignar a cada actuación sus artistas, escenario y horario, para organizar la programación del festival.
 
-### Épica 2. Consulta de festivales y programación
+#### Épica 2. Consulta de festivales y programación
 
 Relacionada con R.G.03: Consulta de horarios y mapa en tiempo real.
 
-#### H.U.04. Consulta de festivales
+##### H.U.04. Consulta de festivales
 
-Como asistente a los festivales, quiero consultar los distintos festivales y sus datos de ubicación y programación, para elegir a cuáles asistir.
+Como asistente, quiero consultar dónde se celebran los festivales y qué actuaciones tienen, para elegir a cuáles ir.
 
-#### H.U.05. Consulta de horarios
+##### H.U.05. Consulta de horarios
 
-Como asistente a los festivales, quiero consultar los horarios actualizados de las actuaciones de un festival, para organizar los conciertos que quiero ver.
+Como asistente, quiero consultar los horarios actualizados de las actuaciones, para organizar los conciertos que quiero ver.
 
-#### H.U.06. Localización de escenarios y accesos
+##### H.U.06. Localización de escenarios y accesos
 
-Como asistente a los festivales, quiero consultar la ubicación de los escenarios y de los accesos al recinto, para orientarme dentro del festival.
+Como asistente, quiero consultar dónde están los escenarios y los accesos al recinto, para orientarme en el festival.
 
-### Épica 3. Gestión de entradas y control de acceso
+#### Épica 3. Gestión de entradas y control de acceso
 
 Relacionada con R.G.02: Agilización del acceso (check-in).
 
-#### H.U.07. Registro de asistentes
+##### H.U.07. Registro de asistentes
 
-Como asistente a los festivales, quiero registrarme con mis datos personales, para poder adquirir entradas y quedar identificado en el sistema.
+Como asistente, quiero registrarme con mis datos personales, para poder comprar entradas y quedar identificado en el sistema.
 
-#### H.U.08. Consulta de entradas
+##### H.U.08. Consulta de entradas
 
-Como asistente a los festivales, quiero consultar la disponibilidad, el precio y las zonas autorizadas de cada tipo de entrada, para elegir la que mejor se adapte a mis necesidades.
+Como asistente, quiero consultar los tipos de entrada, sus precios, su disponibilidad y las zonas que incluyen, para elegir cuál comprar.
 
-#### H.U.09. Adquisición de entradas
+##### H.U.09. Compra de entradas
 
-Como asistente a los festivales, quiero adquirir una entrada para el festival seleccionado, para poder asistir y acceder a las zonas que incluye.
+Como asistente, quiero comprar una entrada para el festival elegido, para poder asistir y acceder a las zonas que incluye.
 
-#### H.U.10. Validación de entradas
+##### H.U.10. Validación de entradas
 
-Como personal de control y acceso, quiero comprobar la identidad del asistente, la validez de su entrada y las zonas que autoriza, para permitir únicamente los accesos que correspondan.
+Como personal de control y acceso, quiero comprobar que la entrada es válida, pertenece al asistente y permite acceder a la zona solicitada, para autorizar el acceso correctamente.
 
-#### H.U.11. Registro de entradas y salidas
+##### H.U.11. Registro de entradas y salidas
 
-Como personal de control y acceso, quiero registrar las entradas y salidas de los asistentes de cada recinto, para mantener actualizado el control de acceso al festival.
+Como personal de control y acceso, quiero registrar cuándo entran y salen los asistentes, para mantener actualizado quién está dentro del recinto.
 
-#### H.U.12. Consulta de registros de acceso
+##### H.U.12. Consulta de registros de acceso
 
-Como personal de control y acceso, quiero consultar los registros de entradas y salidas de cada festival, para comprobar los accesos realizados.
+Como personal de control y acceso, quiero consultar las entradas y salidas registradas, para comprobar los accesos de los asistentes al festival.
 
-### Épica 4. Gestión de saldo y pagos cashless
+#### Épica 4. Gestión de saldo y pagos cashless
 
 Relacionada con R.G.04: Gestión de saldo y pagos cashless.
 
-#### H.U.13. Consulta de saldo
+##### H.U.13. Consulta de saldo
 
-Como asistente a los festivales, quiero consultar mi saldo cashless disponible, para saber cuánto puedo gastar dentro del recinto.
+Como asistente, quiero consultar mi saldo disponible, para saber cuánto puedo gastar dentro del recinto.
 
-#### H.U.14. Recarga de saldo
+##### H.U.14. Recarga de saldo
 
-Como asistente a los festivales, quiero recargar mi saldo cashless, para disponer de dinero suficiente para realizar compras dentro del recinto.
+Como asistente, quiero añadir saldo a mi cuenta cashless, para poder realizar compras dentro del recinto.
 
-#### H.U.15. Pago mediante credencial o pulsera
+##### H.U.15. Pago con credencial o pulsera
 
-Como asistente a los festivales, quiero realizar pagos utilizando mi credencial o pulsera y el saldo disponible, para comprar dentro del recinto sin utilizar dinero en efectivo.
+Como asistente, quiero pagar con mi credencial o pulsera utilizando mi saldo disponible, para comprar sin usar dinero en efectivo.
 
-#### H.U.16. Consulta del historial de operaciones
+##### H.U.16. Consulta del historial de operaciones
 
-Como asistente a los festivales, quiero consultar mis recargas y pagos realizados, para comprobar los movimientos de mi saldo y verificar las transacciones.
+Como asistente, quiero consultar las recargas y los pagos que he realizado, para comprobar en qué he gastado mi saldo.
 
-### Épica 5. Seguimiento del festival
+#### Épica 5. Seguimiento del festival
 
 Relacionada con R.G.05: Monitorización de aforo y ventas por zona.
 
-#### H.U.17. Consulta del aforo
+##### H.U.17. Consulta del aforo
 
-Como promotor de los festivales, quiero consultar el número de asistentes presentes en el recinto de cada festival, para supervisar la ocupación y detectar posibles saturaciones.
+Como promotor, quiero consultar cuántas personas están dentro del recinto, para controlar la ocupación del festival.
 
-#### H.U.18. Consulta de ventas por zona
+##### H.U.18. Consulta de ventas por zona
 
-Como promotor de los festivales, quiero consultar las ventas realizadas en las distintas zonas del recinto, para supervisar la actividad comercial durante el festival.
+Como promotor, quiero consultar las ventas de las distintas zonas del recinto, para hacer un seguimiento de la actividad comercial del festival.
 
 ### 4.3. Requisitos no funcionales (opcional)
 
