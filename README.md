@@ -120,8 +120,22 @@ quiero saber la siguente informacion sobre el festival:
   
 - Los horarios de cada actuación
 
+- Donde se encuentran los aseos 
 
-##### R.I.02. Informacion sobre la disponivilidad para organizar el festival 
+- Saber que alimentos y bebidas podré introducir al recinto 
+
+- Las medidas de seguridad que se emplearan durante el evento
+
+- Los precios que se ofertan dentro del recinto en referencia a la comida y o bebida.
+
+- Los distintos escenarios que hay en el recinto 
+
+- Los tiempos de espera de la cola de acceso
+
+- El código de vestimenta que tiene el festival
+
+
+##### R.I.02. Informacion sobre la disponibilidad para organizar el festival 
 
 Como promotor del festival 
 quiero saber la siguente información a la hora de organizar: 
@@ -134,7 +148,9 @@ quiero saber la siguente información a la hora de organizar:
   
 - Financiacion (patrocinadores) necesaria.
 
--Cantidad de escenarios necesarios dentro de cada recinto.
+- Cantidad de escenarios necesarios dentro de cada recinto.
+
+- Disponibilidad de servicios de restauración
 
 
 ##### R.I.03. Informacion sobre los asistentes a los festivales  
@@ -150,7 +166,7 @@ Tanto como promotor del evento que como personal de control y acceso quiero sabe
 
 Como asistente al festival quiero poder consultar lo siguiente:
 
-- Disponivilidad de entradas
+- Disponibilidad de entradas
 
 - Zonas disponibles con cada entrada
 
