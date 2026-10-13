@@ -19,11 +19,15 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 
 ## 2. Glosario de términos
 
-- Check-In: Proceso mediante el cual se escanea y valida la entrada de los asistentes en las entradas al recinto, autorizando su ingreso al festival y actualizando su estado como "presente". Si algún usuario intenta entrar en alguna zona que su tipo de entrada no autoriza dará error.
-- Autentificación: Proceso mediante el cual cada usuario inicia sesión en la interfaz para que el sistema verifique su identidad y le otorgue los permisos asociados a su rol.
-- Transacción cashless: Proceso de cobro mediante el escaneo de la pulsera/QR del asistente en el punto de venta. Al realizar una comprao o recarga se suma o resta del saldo asociado a su cuenta.
-- Frontend: Parte del sistema correspondiente a la interfaz gráfica con la que interactúan los usuarios.
-- Dashboard: Panel de control con toda la información sobre el festival en tiempo real al cual tienen acceso los organizadores del evento.
+- Autentificación: Proceso mediante el cual el sistema verifica la identidad de un usuario que inicia sesión y le concede los permisos asociados a su rol.
+
+- Check-in: Proceso de validación de la entrada de un asistente y registro de su acceso al recinto del festival.
+
+- Dashboard: Panel de control que permite a los promotores consultar información del festival, como el aforo y las ventas por zona.
+
+- Frontend: Parte visual del sistema con la que interactúan los usuarios.
+
+- Transacción cashless: Operación que modifica el saldo digital de un asistente. Una recarga aumenta el saldo y un pago lo reduce. Los pagos se realizan mediante la credencial o pulsera del asistente.
 
 ## 3. Visión general del sistema
 
@@ -48,7 +52,7 @@ para organizar mi itinerario sin perderme ninguna actuación.
 Como asistente al festival, quiero poder recargar saldo digital en mi perfil y realizar pagos mediante el escaneo de mi credencial o pulsera, para comprar comida, bebida y otros productos de forma rápida, sencilla y segura.
 Además, quiero poder consultar en todo momento el saldo disponible y los movimientos realizados para llevar un control de mis gastos durante el evento. De esta manera, podré reducir el tiempo de espera en los puntos de venta, evitar el uso de dinero en efectivo y disfrutar del festival con mayor comodidad,sin tener que preocuparme constantemente por llevar dinero encima.
 
-#### R.G.05. Monitorización de aforo e incidencias en timepo real
+#### R.G.05. Monitorización de aforo y ventas por zona
 Como promotor del festival,
 quiero visualizar datos del aforo del recinto en tiempo real y las ventas por zona,
 para garantizar la seguridad, evitar saturaciones y tomar decisiones operativas durante el evento.
@@ -73,12 +77,13 @@ Gestionar las entradas de los asistentes, control de las entradas/salidas del re
 Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para complar sus entradas y tener un contro de quien accede al festival.
 
 **Prueba de aceptación**
-- Dos usuarios no pueden registrase con el mismo correo electrónico, ni se pueden llamar de la misma forma (nombres y apellidos iguales) y tampoco pueden tener la misma documentación. 
+- Se intenta registrar un asistente con un correo electrónico o documento de identidad ya registrado: el sistema rechaza el registro.
+- Se intenta registrar dos asistentes con el mismo nombre y apellidos, pero con correos electrónicos y documentos de identidad distintos: el sistema permite ambos registros. 
 - Los asistentesdeben ser mayores de edad (18 años o mas).
 - Se debe aplicar la regla de negocio R.N.XX.
 
 
-#### R.F.01. Organizacion del festival
+#### R.F.02. Organizacion del festival
 
 Como promotor de los festivales quiero organizar los distintos recintos alrededor de españa, a los artistas y patrocinadores que participaran en dicho evento y las distintas zonas de escenario que habra en el festival para tener el control de la asistencia de los artistas en cada festival ademas de los afroros en cada recinto y localizacion de los conciertos.
 
@@ -88,7 +93,7 @@ Como promotor de los festivales quiero organizar los distintos recintos alrededo
 - Se debe aplicar la regla de negocio ...
   
 
-#### R.F.01. Método de pago 
+#### R.F.03. Método de pago 
 Como comercio dentro del festival y como asistente al mismo quiero metodos de pago fiables y rapidos para no perder dinero y agilizar la compra venta en el festival 
 
 **Prueba de aceptación**
@@ -96,7 +101,7 @@ Como comercio dentro del festival y como asistente al mismo quiero metodos de pa
 
   
 
-#### R.F.01. Control de entrada 
+#### R.F.04. Control de entrada 
 Como personal de control y acceso al festival quiero un metodo de identificacion rapido para garantoizar que el asistente tiene entrada y cumple los requisitos para entrar.
 
 **Prueba de aceptación**
@@ -294,7 +299,7 @@ Como asistente a los festivales, quiero consultar mis recargas y pagos realizado
 
 ### Épica 5. Seguimiento del festival
 
-Relacionada con R.G.05: Monitorización de aforo e incidencias en tiempo real.
+Relacionada con R.G.05: Monitorización de aforo y ventas por zona.
 
 #### H.U.17. Consulta del aforo
 
@@ -315,7 +320,7 @@ Como promotor del festival, quiero que los datos personales de los asistentes es
 Como promotor del festival, quiero que las consultas relacionadas con las entradas, el aforo y la información de los asistentes se realicen en un tiempo razonable, para gestionar el evento de forma eficiente. Asimismo, el sistema debe funcionar correctamente cuando varios usuarios lo utilicen al mismo tiempo, evitando así retrasos excesivos y facilitando el acceso a la información tanto a los organizadores como a los asistentes.
 
 
-**R.N.F. 02. Facilidad de uso**
+**R.N.F. 03. Facilidad de uso**
 
 Como asistente al festival, quiero que la plataforma sea sencilla e intuitiva, para poder consultar fácilmente la información sobre las entradas, los horarios de los conciertos y la ubicación exacta de los escenarios. Además, quiero que los diferentes apartados estén organizados de forma clara, para encontrar rápidamente la información que necesito sin tener conocimientos técnicos previos.
 
