@@ -80,7 +80,7 @@ Como promotor de los festivales quiero que los asistentes se puedan registrar co
 - Se intenta registrar un asistente con un correo electrónico o documento de identidad ya registrado: el sistema rechaza el registro.
 - Se intenta registrar dos asistentes con el mismo nombre y apellidos, pero con correos electrónicos y documentos de identidad distintos: el sistema permite ambos registros. 
 - Los asistentesdeben ser mayores de edad (18 años o mas).
-- Se debe aplicar la regla de negocio R.N.XX.
+- Se debe aplicar la regla de negocio R.N.02.
 
 
 #### R.F.02. Organizacion del festival
@@ -91,6 +91,7 @@ Como promotor de los festivales quiero organizar los distintos recintos alrededo
 - Un artistas no pueden estar en mas de un escenario a la misma hora, ni durante la duracion del conciento a dicha hora. Además de que no podria estar el mismo dia en dos festivales de diferentes localizaciones. 
 - Los asistentes al concierto no pueden superar el aforo del recinto.
 - Se debe aplicar la regla de negocio ...
+- Se debe aplicar la regla de negocio R.N.02. y el R.N.01
   
 
 #### R.F.03. Método de pago 
@@ -98,7 +99,7 @@ Como comercio dentro del festival y como asistente al mismo quiero metodos de pa
 
 **Prueba de aceptación**
 - Debe tener saldo suficiente para hacer la compra.
-
+- Se debe aplicar la regla de negocio R.N.01
   
 
 #### R.F.04. Control de entrada 
@@ -108,7 +109,8 @@ Como personal de control y acceso al festival quiero un metodo de identificacion
 - Cuando pasa la entrada marca como "Entrada", una vez con eso la persona que entra no debe tener esa marca.
 - Debe entrar por la zona correcta que marque su entrada
 - Su informacion identificadora debe ser valida  
-
+- Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05
+  
 
 #### 4.1.1. Requisitos de información
 
