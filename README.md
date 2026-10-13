@@ -30,10 +30,10 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 ### 3.1. Requisitos generales
 
 #### R.G.01. Gestión centralizada de los eventos y su programación
-Como promotor del festival,
-quiero gestionar de forma centralizada la información de escenarios, artistas, horarios y zonas del recinto,
-para evitar la pérdida de datos y mantener toda la información coordinada.
-
+Como promotor del festival, quiero gestionar desde una única plataforma toda la información relacionada con los escenarios, los artistas, 
+los horarios de las actuaciones y las diferentes zonas del recinto, para mantener todos los datos organizados y actualizados. 
+De esta forma, podré coordinar mejor la programacióndel festival, realizar cambios cuando seanecesario 
+y evitar errores y confusiones durante la planificación y el desarrollo del evento.
 #### R.G.02. Agilización del acceso (check-in)
 Como personal de control y accesos,
 quiero disponer de un sistema de lectura y validación rápida de entradas y credenciales,
