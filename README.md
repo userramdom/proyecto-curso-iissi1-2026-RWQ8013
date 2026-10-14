@@ -33,26 +33,32 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 
 ### 3.1. Requisitos generales
 
-#### R.G.01. Gestión centralizada de los eventos y su programación
+#### R.G.01. Gestión centralizada de los eventos y su programación  
+
 Como promotor del festival, quiero gestionar desde una única plataforma toda la información relacionada con los escenarios, los artistas, 
 los horarios de las actuaciones y las diferentes zonas del recinto, para mantener todos los datos organizados y actualizados. 
 De esta forma, podré coordinar mejor la programacióndel festival, realizar cambios cuando seanecesario 
 y evitar errores y confusiones durante la planificación y el desarrollo del evento.
+
 #### R.G.02. Agilización del acceso (check-in)
+
 Como personal de control y accesos,
 quiero disponer de un sistema de lectura y validación rápida de entradas y credenciales,
 para reducir las colas en la enrada del recinto y agilizar el flujo de asistenetes.
 
 #### R.G.03. Consulta de horarios y mapa en tiempo real
+
 Como asistente al festival,
 quiero consultar los horarios actualizados y localización de los escenarios,
 para organizar mi itinerario sin perderme ninguna actuación.
 
 #### R.G.04. Gestión de saldo y pagos cashless
+
 Como asistente al festival, quiero poder recargar saldo digital en mi perfil y realizar pagos mediante el escaneo de mi credencial o pulsera, para comprar comida, bebida y otros productos de forma rápida, sencilla y segura.
-Además, quiero poder consultar en todo momento el saldo disponible y los movimientos realizados para llevar un control de mis gastos durante el evento. De esta manera, podré reducir el tiempo de espera en los puntos de venta, evitar el uso de dinero en efectivo y disfrutar del festival con mayor comodidad,sin tener que preocuparme constantemente por llevar dinero encima.
+Además, quiero poder consultar en todo momento el saldo disponible y los movimientos realizados para llevar un control de mis gastos durante el evento. De esta manera, podré reducir el tiempo de espera en los puntos de venta, evitar el uso de dinero en efectivo y disfrutar del festival con mayor comodidad, sin tener que preocuparme constantemente por llevar dinero encima.
 
 #### R.G.05. Monitorización de aforo y ventas por zona
+
 Como promotor del festival,
 quiero visualizar datos del aforo del recinto en tiempo real y las ventas por zona,
 para garantizar la seguridad, evitar saturaciones y tomar decisiones operativas durante el evento.
@@ -60,10 +66,13 @@ para garantizar la seguridad, evitar saturaciones y tomar decisiones operativas 
 ### 3.2. Usuarios del sistema
 
 ### PROMOTOR DE LOS FESTIVALES
-Gestionar el recinto del festival, aforo, patrocinadores, organización de los escenarios, cantidad de artistas que asistiran al festival.
+
+El promotor se encarga de organizar y gestionar todos los aspectos relacionados con el festival. Entre sus funciones se encuentran la gestión del recinto, el control del aforo, la coordinación de los patrocinadores y la distribución de los diferentes escenarios.
+Además, debe gestionar la participación de los artistas, organizar sus actuaciones y coordinar los horarios para garantizar que el evento se desarrolle de forma ordenada y eficiente.
 
 ### ASISTENTES DE LOS FESTIVALES
-Comprobar localizacion de cada concierto, metodos de pagos dentro del recinto, horarios de los conciertos, localizacion de las entradas al recinto. 
+
+El asistente al festival necesita disponer de información clara y actualizada sobre la  ubicación de cada concierto y los horarios de las diferentes actuaciones, para poder organizar su tiempo y desplazarse entre los escenarios sin perderse ninguna actuación de su interés. También necesita conocer la localización de las entradas y los distintos accesos al recinto, para facilitar su llegada y evitar posibles confusiones. Además, es importante que pueda consultar los métodos de pago aceptados dentro del festival, como el pago con tarjeta o en efectivo, así como las opciones disponibles para comprar comida, bebida y  otros productos. De esta manera, podrá disfrutar del evento con  mayor comodidad y planificar mejor su experiencia.
 
 ### PERSONAL DE CONTROL Y ACCESO 
 Gestionar las entradas de los asistentes, control de las entradas/salidas del recinto. 
