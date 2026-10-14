@@ -8,13 +8,13 @@
 
 ## 1. Introducción al problema
 
-El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de organizacion y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente una gran cantidad de elementos (artistas, patrocinadores, asistentes, seguridad, etc) en tiempo real. 
+El sector de los festivales de música ha experimentado un crecimiento exponencial en los últimos años, concentrando a miles de personas en recintos delimitados durante varios días. Al tener una gran demanda, muchos de los usuarios pueden experimentar problemas de organización y masificación. Por otro lado, los organizadores enfrentan grandes retos para gestionar eficientemente una gran cantidad de elementos (artistas, patrocinadores, asistentes, seguridad, etc) en tiempo real. 
 
-En este tipo de eventos podemos identificar diferentes perfiles de usuarios. Por un lado, se encuentran los asistentes al festival, que suelen ser principalmente jóvenes de entre 18 y 35 años interesados en la música y en disfrutar de este tipo de experiencias. Por otro lado, participan los promotores, que se encargan de organizar y coordinar el evento; los patrocinadores, que contribuyen a su financiación y promoción; y los artistas, que ofrecen las actuaciones musicales. Cada uno de estos perfiles tiene necesidades diferentes, por lo que es importante tenerlos en cuenta a la hora de diseñar el sistema de gestión delfestival.
+En este tipo de eventos podemos identificar diferentes perfiles de usuarios. Por un lado, se encuentran los asistentes al festival, que suelen ser principalmente jóvenes de entre 18 y 35 años interesados en la música y en disfrutar de este tipo de experiencias. Por otro lado, participan los promotores, que se encargan de organizar y coordinar el evento; los patrocinadores, que contribuyen a su financiación y promoción; y los artistas, que ofrecen las actuaciones musicales. Cada uno de estos perfiles tiene necesidades diferentes, por lo que es importante tenerlos en cuenta a la hora de diseñar el sistema de gestión del festival.
 
 Actualmente nos enfrentamos a problemas como la falta de información en tiempo real (como los horarios y las zonas dentro del recinto), la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
 
-El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario. De esta forma, por un lado los asistentes podran acceder a informacion a tiempo real, consultar entradas, horarios, etc; y los promotores podran usarla en forma de ayuda para organizar y administrar los eventos comprobando en tiempo real el aforo, la disponiviledad de los recintos, etc.
+El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario. De esta forma, por un lado los asistentes podran acceder a información a tiempo real, consultar entradas, horarios, etc; y los promotores podran usarla en forma de ayuda para organizar y administrar los eventos comprobando en tiempo real el aforo, la disponibilidad de los recintos, etc.
 
 ## 2. Glosario de términos
 
@@ -36,14 +36,14 @@ El objetivo de este proyecto es diseñar e implementar una base de datos que uni
 
 Como promotor del festival, quiero gestionar desde una única plataforma toda la información relacionada con los escenarios, los artistas, 
 los horarios de las actuaciones y las diferentes zonas del recinto, para mantener todos los datos organizados y actualizados. 
-De esta forma, podré coordinar mejor la programacióndel festival, realizar cambios cuando seanecesario 
+De esta forma, podré coordinar mejor la programación del festival, realizar cambios cuando sea necesario 
 y evitar errores y confusiones durante la planificación y el desarrollo del evento.
 
 #### R.G.02. Agilización del acceso (check-in)
 
 Como personal de control y accesos,
 quiero disponer de un sistema de lectura y validación rápida de entradas y credenciales,
-para reducir las colas en la enrada del recinto y agilizar el flujo de asistenetes.
+para reducir las colas en la enrada del recinto y agilizar el flujo de asistentes.
 
 #### R.G.03. Consulta de horarios y mapa en tiempo real
 
@@ -87,67 +87,67 @@ Como promotor de los festivales quiero que los asistentes se puedan registrar co
 **Prueba de aceptación**
 - Se intenta registrar un asistente con un correo electrónico o documento de identidad ya registrado: el sistema rechaza el registro.
 - Se intenta registrar dos asistentes con el mismo nombre y apellidos, pero con correos electrónicos y documentos de identidad distintos: el sistema permite ambos registros. 
-- Los asistentesdeben ser mayores de edad (18 años o mas).
+- Los asistentes deben ser mayores de edad (18 años o mas).
 - Se debe aplicar la regla de negocio R.N.02.
 
 
 #### R.F.02. Organizacion del festival
 
-Como promotor de los festivales quiero organizar los distintos recintos alrededor de españa, a los artistas y patrocinadores que participaran en dicho evento y las distintas zonas de escenario que habra en el festival para tener el control de la asistencia de los artistas en cada festival ademas de los afroros en cada recinto y localizacion de los conciertos.
+Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participaran en dicho evento y las distintas zonas de escenario que habra en el festival para tener el control de la asistencia de los artistas en cada festival ademas de los aforos en cada recinto y localización de los conciertos.
 
 **Prueba de aceptación**
-- Un artistas no pueden estar en mas de un escenario a la misma hora, ni durante la duracion del conciento a dicha hora. Además de que no podria estar el mismo dia en dos festivales de diferentes localizaciones. 
+- Un artista no puede estar en mas de un escenario a la misma hora, ni durante la duración del conciento a dicha hora. Además de que no podría estar el mismo día en dos festivales de diferentes localizaciones. 
 - Los asistentes al concierto no pueden superar el aforo del recinto.
 - Se debe aplicar la regla de negocio ...
 - Se debe aplicar la regla de negocio R.N.02. y el R.N.01
   
 
 #### R.F.03. Método de pago 
-Como comercio dentro del festival y como asistente al mismo quiero metodos de pago fiables y rapidos para no perder dinero y agilizar la compra venta en el festival 
+Como comercio dentro del festival y como asistente al mismo quiero metodos de pago fiables y rápidos para no perder dinero y agilizar la compra venta en el festival.
 
 **Prueba de aceptación**
 - Debe tener saldo suficiente para hacer la compra.
-- Se debe aplicar la regla de negocio R.N.01
+- Se debe aplicar la regla de negocio R.N.01.
   
 
 #### R.F.04. Control de entrada 
-Como personal de control y acceso al festival quiero un metodo de identificacion rapido para garantoizar que el asistente tiene entrada y cumple los requisitos para entrar.
+Como personal de control y acceso al festival quiero un método de identificación rapido para garantoizar que el asistente tiene entrada y cumple los requisitos para entrar.
 
 **Prueba de aceptación**
 - Cuando pasa la entrada marca como "Entrada", una vez con eso la persona que entra no debe tener esa marca.
-- Debe entrar por la zona correcta que marque su entrada
-- Su informacion identificadora debe ser valida  
-- Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05
+- Debe entrar por la zona correcta que marque su entrada.
+- Su informacion identificadora debe ser valida.
+- Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05.
   
 
 #### 4.1.1. Requisitos de información
 
 ##### R.I.01. Información sobre el festival 
 
-Como asistente al festival 
-quiero saber la siguente informacion sobre el festival: 
+Como asistente al festival.
+quiero saber la siguente información sobre el festival: 
 
-- Lugar del festival
+- Lugar del festival.
   
-- Los artistas que asistiran al evento
+- Los artistas que asistirán al evento.
   
-- Por donde debo entrar al evento
+- Por donde debo entrar al evento.
   
-- Los horarios de cada actuación
+- Los horarios de cada actuación.
 
-- Donde se encuentran los aseos 
+- Donde se encuentran los aseos.
 
-- Saber que alimentos y bebidas podré introducir al recinto 
+- Saber qué alimentos y bebidas podré introducir al recinto. 
 
-- Las medidas de seguridad que se emplearan durante el evento
+- Las medidas de seguridad que se emplearan durante el evento.
 
 - Los precios que se ofertan dentro del recinto en referencia a la comida y o bebida.
 
-- Los distintos escenarios que hay en el recinto 
+- Los distintos escenarios que hay en el recinto.
 
-- Los tiempos de espera de la cola de acceso
+- Los tiempos de espera de la cola de acceso.
 
-- El código de vestimenta que tiene el festival
+- El código de vestimenta que tiene el festival.
 
 
 ##### R.I.02. Informacion sobre la disponibilidad para organizar el festival 
@@ -165,46 +165,46 @@ quiero saber la siguente información a la hora de organizar:
 
 - Cantidad de escenarios necesarios dentro de cada recinto.
 
-- Disponibilidad de servicios de restauración
+- Disponibilidad de servicios de restauración.
 
 
 ##### R.I.03. Informacion sobre los asistentes a los festivales  
 
-Tanto como promotor del evento que como personal de control y acceso quiero saber la siguiente informacion: 
+Tanto como promotor del evento que como personal de control y acceso quiero saber la siguiente información: 
 
-- Informacion sobre la identidad de los asistentes (nombres y apellidos, correo, documentacion, etc)
+- Información sobre la identidad de los asistentes (nombres y apellidos, correo, documentación, etc).
 
-- Control de todas las entradas/salidas de cada recinto 
+- Control de todas las entradas/salidas de cada recinto.
 
 
-##### R.I.04. Informacion sobre las entradas sus tipos y el acceso de cada una 
+##### R.I.04. Información sobre las entradas sus+/++ tipos y el acceso de cada una 
 
 Como asistente al festival quiero poder consultar lo siguiente:
 
-- Disponibilidad de entradas
+- Disponibilidad de entradas.
 
-- Zonas disponibles con cada entrada
+- Zonas disponibles con cada entrada.
 
-- Precio de cada entrada 
+- Precio de cada entrada. 
 
 Como promotor y como personal de control y acceso me gustaria saber:
 
-- El estado de la entrada
+- El estado de la entrada.
 
--Identificacion de la entrada 
+-Identificación de la entrada. 
 
-- Actualizacion periodica en tiempo reac de cuantas personas van entrando al evento.
+- Actualización periódica en tiempo real de cuantas personas van entrando al evento.
 
 
-##### R.I.05. Informacion sobre los pagos y comercios en el evento  
+##### R.I.05. Información sobre los pagos y comercios en el evento  
 
 Como asistente al evento me gustaria saber:
 
-- Saldo disponible
+- Saldo disponible.
 
-- Historial de recargas y operaciones realizadas 
+- Historial de recargas y operaciones realizadas. 
 
-- Verificacion de las transacciones 
+- Verificación de las transacciones.
 
 
   
