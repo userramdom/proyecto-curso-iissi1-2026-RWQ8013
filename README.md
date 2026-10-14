@@ -259,6 +259,51 @@ Un asistente que ya aparece dentro del recinto no puede registrar otra entrada h
 - Un asistente que ya está dentro intenta registrar otra entrada: el sistema la rechaza y el número de personas presentes no cambia.
 - Se intenta registrar la salida de alguien que no aparece dentro: el sistema la rechaza y el número de personas presentes no cambia.
 
+##### R.N.06. Control del aforo del recinto
+
+El número de asistentes que se encuentren dentro del recinto no puede superar el aforo máximo permitido. Cuando se alcance el límite de personas, no se permitirá la entrada de más asistentes hasta que se registre alguna salida.
+
+**Pruebas de aceptación**
+- Si el recinto tiene aforo disponible, se podrá permitir la entrada de un asistente que tenga una entrada válida.
+- Si el recinto ha alcanzado su aforo máximo, no se permitirá la entrada de más personas.
+- Cuando un asistente salga del recinto y se registre su salida, se actualizará el aforo disponible.
+
+##### R.N.07. Organización de los horarios de los artistas
+
+Un artista no puede actuar en dos escenarios diferentes a la misma hora ni tener dos actuaciones cuyos horarios se solapen. De esta forma, se evitan los conflictos en la programación del festival.
+
+**Pruebas de aceptación**
+- Se podrá asignar un artista a una actuación si no tiene otra programada en ese mismo horario.
+- No se permitirá guardar una programación en la que un artista tenga dos actuaciones que coincidan total o parcialmente en el tiempo.
+- Se podrá programar al mismo artista en diferentes horarios, siempre que las actuaciones no se solapen.
+
+##### R.N.08. Participación de los artistas en diferentes festivales
+
+Un artista no puede participar el mismo día en dos festivales que se celebren en lugares diferentes, ya que no podría asistir a ambas actuaciones.
+
+**Pruebas de aceptación**
+- Se podrá asignar un artista a un festival si no tiene otra actuación ese mismo día en un festival situado en otra localización.
+- No se permitirá programar al mismo artista en dos festivales diferentes el mismo día si se celebran en lugares distintos.
+- Se podrá programar al artista en festivales diferentes si las fechas no coinciden.
+
+##### R.N.09. Saldo suficiente para realizar pagos
+
+Para realizar una compra dentro del festival mediante el sistema de pago cashless, el asistente debe tener saldo suficiente en su cuenta. Si el saldo es inferior al importe de la compra, el pago no se realizará.
+
+**Pruebas de aceptación**
+- Si el asistente tiene saldo suficiente para pagar una compra, se permitirá realizar el pago.
+- Si el saldo del asistente es inferior al importe de la compra, se rechazará el pago.
+- Cuando se realice una compra correctamente, se descontará del saldo el importe correspondiente.
+
+##### R.N.10. Actualización del saldo y registro de las operaciones
+
+Cada vez que un asistente realice una recarga o un pago mediante el sistema cashless, se deberá actualizar su saldo y guardar la operación realizada para que pueda consultarla posteriormente.
+
+**Pruebas de aceptación**
+- Cuando se realice una recarga correctamente, se sumará el importe al saldo disponible del asistente.
+- Cuando se realice un pago correctamente, se restará el importe correspondiente del saldo.
+- Las recargas y los pagos realizados quedarán registrados en el historial de operaciones del asistente.
+
 ##### R.N.01. Título regla negocio
 
 Descripción de la regla de negocio.
