@@ -14,7 +14,7 @@ En este tipo de eventos podemos identificar diferentes perfiles de usuarios. Por
 
 Actualmente nos enfrentamos a problemas como la falta de información en tiempo real (como los horarios y las zonas dentro del recinto), la descentralización de la información sobre el evento o largas colas en los accesos por una mala verificación de los asistentes. 
 
-El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario. De esta forma, por un lado los asistentes podran acceder a información a tiempo real, consultar entradas, horarios, etc; y los promotores podran usarla en forma de ayuda para organizar y administrar los eventos comprobando en tiempo real el aforo, la disponibilidad de los recintos, etc.
+El objetivo de este proyecto es diseñar e implementar una base de datos que unifique toda la información del evento de forma organizada facilitando su acceso para aquellos que los necesiten, según el rol del usuario. De esta forma, por un lado los asistentes podrán acceder a información a tiempo real, consultar entradas, horarios, etc; y los promotores podran usarla en forma de ayuda para organizar y administrar los eventos comprobando en tiempo real el aforo, la disponibilidad de los recintos, etc.
 
 ## 2. Glosario de términos
 
@@ -43,7 +43,7 @@ y evitar errores y confusiones durante la planificación y el desarrollo del eve
 
 Como personal de control y accesos,
 quiero disponer de un sistema de lectura y validación rápida de entradas y credenciales,
-para reducir las colas en la enrada del recinto y agilizar el flujo de asistentes.
+para reducir las colas en la entrada del recinto y agilizar el flujo de asistentes.
 
 #### R.G.03. Consulta de horarios y mapa en tiempo real
 
@@ -82,27 +82,27 @@ Gestionar las entradas de los asistentes, control de las entradas/salidas del re
 
 #### R.F.01. Registro de los asistentes
 
-Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para complar sus entradas y tener un contro de quien accede al festival.
+Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para comprar sus entradas y tener un contro de quien accede al festival.
 
 **Prueba de aceptación**
 - Se intenta registrar un asistente con un correo electrónico o documento de identidad ya registrado: el sistema rechaza el registro.
 - Se intenta registrar dos asistentes con el mismo nombre y apellidos, pero con correos electrónicos y documentos de identidad distintos: el sistema permite ambos registros. 
-- Los asistentes deben ser mayores de edad (18 años o mas).
+- Los asistentes deben ser mayores de edad (18 años o más).
 - Se debe aplicar la regla de negocio R.N.02.
 
 
-#### R.F.02. Organizacion del festival
+#### R.F.02. Organización del festival
 
-Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participaran en dicho evento y las distintas zonas de escenario que habra en el festival para tener el control de la asistencia de los artistas en cada festival ademas de los aforos en cada recinto y localización de los conciertos.
+Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participarán en dicho evento y las distintas zonas de escenario que habrá en el festival para tener el control de la asistencia de los artistas en cada festival además de los aforos en cada recinto y localización de los conciertos.
 
 **Prueba de aceptación**
-- Un artista no puede estar en mas de un escenario a la misma hora, ni durante la duración del conciento a dicha hora. Además de que no podría estar el mismo día en dos festivales de diferentes localizaciones. 
+- Un artista no puede estar en más de un escenario a la misma hora, ni durante la duración del conciento a dicha hora. Además de que no podría estar el mismo día en dos festivales de diferentes localizaciones. 
 - Los asistentes al concierto no pueden superar el aforo del recinto.
 - Se deben aplicar las reglas de negocio R.N.06, R.N.07 y R.N.08.
   
 
 #### R.F.03. Método de pago 
-Como comercio dentro del festival y como asistente al mismo quiero metodos de pago fiables y rápidos para no perder dinero y agilizar la compra venta en el festival.
+Como comercio dentro del festival y como asistente al mismo quiero métodos de pago fiables y rápidos para no perder dinero y agilizar la compra venta en el festival.
 
 **Prueba de aceptación**
 - Debe tener saldo suficiente para hacer la compra.
@@ -110,12 +110,12 @@ Como comercio dentro del festival y como asistente al mismo quiero metodos de pa
   
 
 #### R.F.04. Control de entrada 
-Como personal de control y acceso al festival quiero un método de identificación rapido para garantoizar que el asistente tiene entrada y cumple los requisitos para entrar.
+Como personal de control y acceso al festival quiero un método de identificación rápido para garantizar que el asistente tiene entrada y cumple los requisitos para entrar.
 
 **Prueba de aceptación**
 - Cuando pasa la entrada marca como "Entrada", una vez con eso la persona que entra no debe tener esa marca.
 - Debe entrar por la zona correcta que marque su entrada.
-- Su informacion identificadora debe ser valida.
+- Su información identificadora debe ser válida.
 - Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05.
   
 
@@ -124,23 +124,23 @@ Como personal de control y acceso al festival quiero un método de identificaci�
 ##### R.I.01. Información sobre el festival 
 
 Como asistente al festival.
-quiero saber la siguente información sobre el festival: 
+quiero saber la siguiente información sobre el festival: 
 
 - Lugar del festival.
   
 - Los artistas que asistirán al evento.
   
-- Por donde debo entrar al evento.
+- Por dónde debo entrar al evento.
   
 - Los horarios de cada actuación.
 
-- Donde se encuentran los aseos.
+- Dónde se encuentran los aseos.
 
 - Saber qué alimentos y bebidas podré introducir al recinto. 
 
-- Las medidas de seguridad que se emplearan durante el evento.
+- Las medidas de seguridad que se emplearán durante el evento.
 
-- Los precios que se ofertan dentro del recinto en referencia a la comida y o bebida.
+- Los precios que se ofertan dentro del recinto en referencia a la comida y/o bebida.
 
 - Los distintos escenarios que hay en el recinto.
 
@@ -149,10 +149,10 @@ quiero saber la siguente información sobre el festival:
 - El código de vestimenta que tiene el festival.
 
 
-##### R.I.02. Informacion sobre la disponibilidad para organizar el festival 
+##### R.I.02. Información sobre la disponibilidad para organizar el festival 
 
 Como promotor del festival 
-quiero saber la siguente información a la hora de organizar: 
+quiero saber la siguiente información a la hora de organizar: 
 
 - Aforo de los recintos disponibles para organizar los festivales.
   
@@ -160,7 +160,7 @@ quiero saber la siguente información a la hora de organizar:
   
 - Entradas y seguridad necesaria en el recinto 
   
-- Financiacion (patrocinadores) necesaria.
+- Financiación (patrocinadores) necesaria.
 
 - Cantidad de escenarios necesarios dentro de cada recinto.
 
@@ -169,14 +169,14 @@ quiero saber la siguente información a la hora de organizar:
 
 ##### R.I.03. Informacion sobre los asistentes a los festivales  
 
-Tanto como promotor del evento que como personal de control y acceso quiero saber la siguiente información: 
+Tanto como promotor del evento como personal de control y acceso quiero saber la siguiente información: 
 
 - Información sobre la identidad de los asistentes (nombres y apellidos, correo, documentación, etc).
 
 - Control de todas las entradas/salidas de cada recinto.
 
 
-##### R.I.04. Información sobre las entradas sus+/++ tipos y el acceso de cada una 
+##### R.I.04. Información sobre las entradas sus tipos y el acceso de cada una 
 
 Como asistente al festival quiero poder consultar lo siguiente:
 
@@ -186,18 +186,18 @@ Como asistente al festival quiero poder consultar lo siguiente:
 
 - Precio de cada entrada. 
 
-Como promotor y como personal de control y acceso me gustaria saber:
+Como promotor y como personal de control y acceso me gustaría saber:
 
 - El estado de la entrada.
 
--Identificación de la entrada. 
+- Identificación de la entrada. 
 
 - Actualización periódica en tiempo real de cuantas personas van entrando al evento.
 
 
 ##### R.I.05. Información sobre los pagos y comercios en el evento  
 
-Como asistente al evento me gustaria saber:
+Como asistente al evento me gustaría saber:
 
 - Saldo disponible.
 
@@ -412,9 +412,9 @@ Como promotor, quiero consultar las ventas de las distintas zonas del recinto, p
 
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Seguridad y protección de los datoss personales**
+**R.N.F. 01. Seguridad y protección de los datos personales**
 
-Como promotor del festival, quiero que los datos personales de los asistentes estén protegidos y que únicamente puedan acceder a ellos los usuarios autorizados, para garantizar así su privacidad y evitar accesos no permitidos. Además, quiero que la información almaceada en el sistema se gestione de forma segura, especialmente los datos relacionados con el registro de usuario y la compra de entradas, además del pago con la pulsera.
+Como promotor del festival, quiero que los datos personales de los asistentes estén protegidos y que únicamente puedan acceder a ellos los usuarios autorizados, para garantizar así su privacidad y evitar accesos no permitidos. Además, quiero que la información almacenada en el sistema se gestione de forma segura, especialmente los datos relacionados con el registro de usuario y la compra de entradas, además del pago con la pulsera.
 
 **R.N.F. 02. Rendimiento del sistema**
 
@@ -427,7 +427,7 @@ Como asistente al festival, quiero que la plataforma sea sencilla e intuitiva, p
 
 **R.N.F. 04. Compatibilidad con diferentes dispositivos**
 
-Como asistente al festival, quiero poder acceeder a la plataforma desde diferentes dispositivos, como móviles, tabletas y ordenadores, tanto desde IOS como con Android u otros. Para poder consultar toda la información desde cualquier punto y utilizar el dispositivo que me resulte más cómodo.
+Como asistente al festival, quiero poder acceder a la plataforma desde diferentes dispositivos, como móviles, tabletas y ordenadores, tanto desde iOS como con Android u otros, para poder consultar toda la información desde cualquier punto y utilizar el dispositivo que me resulte más cómodo.
 
 
 -- fin entregable 1 --
