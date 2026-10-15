@@ -149,18 +149,14 @@ quiero saber la siguiente información sobre el festival:
 - El código de vestimenta que tiene el festival.
 
 
-##### R.I.02. Información sobre la disponibilidad para organizar el festival 
+##### R.I.02. Información sobre la capacidad y distribución espacial del recinto
 
 Como promotor del festival 
 quiero saber la siguiente información a la hora de organizar: 
 
 - Aforo de los recintos disponibles para organizar los festivales.
   
-- Los artistas disponibles.
-  
 - Entradas y seguridad necesaria en el recinto 
-  
-- Financiación (patrocinadores) necesaria.
 
 - Cantidad de escenarios necesarios dentro de cada recinto.
 
@@ -205,6 +201,16 @@ Como asistente al evento me gustaría saber:
 
 - Verificación de las transacciones.
 
+
+##### R.I.05. Información sobre financiación, presupuesto y patrocinios
+
+Como promotor/responsabl financero del festival quiero saber:
+
+- Datos de patrocinadores.
+
+- Desglose de ingresos. 
+
+- Balance financiero del festial.
 
   
 #### 4.1.2. Reglas de negocio
