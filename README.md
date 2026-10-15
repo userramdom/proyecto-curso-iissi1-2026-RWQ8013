@@ -117,7 +117,20 @@ Como personal de control y acceso al festival quiero un método de identificaci�
 - Debe entrar por la zona correcta que marque su entrada.
 - Su información identificadora debe ser válida.
 - Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05.
-  
+
+### R.F.05. Control de los artistas en cada festival
+Como promotor del festival quiero saber que artistas van a cada festival y cuantas veces para llevar el registro de dichos artistas.
+
+  **Prueba de aceptación**
+- Que el mismo artista no este en dos escenarios a la ver
+- Que el mismo artista no este en dos ciudades a la vez
+
+### R.F.06. Control de la organizació del festival 
+Como usuario y promotor del festival quiero saber las horas de cada actuación y los lugares correspondientes.
+
+ **Prueba de aceptación**
+- Quiero 
+
 
 #### 4.1.1. Requisitos de información
 
