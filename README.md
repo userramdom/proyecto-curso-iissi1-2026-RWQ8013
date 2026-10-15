@@ -272,15 +272,6 @@ El número de asistentes que se encuentren dentro del recinto no puede superar e
 - Si el recinto ha alcanzado su aforo máximo, no se permitirá la entrada de más personas.
 - Cuando un asistente salga del recinto y se registre su salida, se actualizará el aforo disponible.
 
-##### R.N.07. Organización de los horarios de los artistas
-
-Un artista no puede actuar en dos escenarios diferentes a la misma hora ni tener dos actuaciones cuyos horarios se solapen. De esta forma, se evitan los conflictos en la programación del festival.
-
-**Pruebas de aceptación**
-- Se podrá asignar un artista a una actuación si no tiene otra programada en ese mismo horario.
-- No se permitirá guardar una programación en la que un artista tenga dos actuaciones que coincidan total o parcialmente en el tiempo.
-- Se podrá programar al mismo artista en diferentes horarios, siempre que las actuaciones no se solapen.
-
 ##### R.N.08. Participación de los artistas en diferentes festivales
 
 Un artista no puede participar el mismo día en dos festivales que se celebren en lugares diferentes, ya que no podría asistir a ambas actuaciones.
