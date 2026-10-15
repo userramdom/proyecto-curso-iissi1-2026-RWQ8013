@@ -98,8 +98,7 @@ Como promotor de los festivales quiero organizar los distintos recintos alrededo
 **Prueba de aceptación**
 - Un artista no puede estar en mas de un escenario a la misma hora, ni durante la duración del conciento a dicha hora. Además de que no podría estar el mismo día en dos festivales de diferentes localizaciones. 
 - Los asistentes al concierto no pueden superar el aforo del recinto.
-- Se debe aplicar la regla de negocio ...
-- Se debe aplicar la regla de negocio R.N.02. y el R.N.01
+- Se deben aplicar las reglas de negocio R.N.06, R.N.07 y R.N.08.
   
 
 #### R.F.03. Método de pago 
@@ -107,7 +106,7 @@ Como comercio dentro del festival y como asistente al mismo quiero metodos de pa
 
 **Prueba de aceptación**
 - Debe tener saldo suficiente para hacer la compra.
-- Se debe aplicar la regla de negocio R.N.01.
+- Se deben aplicar las reglas de negocio R.N.09 y R.N.10.
   
 
 #### R.F.04. Control de entrada 
@@ -302,10 +301,6 @@ Cada vez que un asistente realice una recarga o un pago mediante el sistema cash
 - Cuando se realice una recarga correctamente, se sumará el importe al saldo disponible del asistente.
 - Cuando se realice un pago correctamente, se restará el importe correspondiente del saldo.
 - Las recargas y los pagos realizados quedarán registrados en el historial de operaciones del asistente.
-
-##### R.N.01. Título regla negocio
-
-Descripción de la regla de negocio.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
