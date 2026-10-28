@@ -82,55 +82,46 @@ Gestionar las entradas de los asistentes, control de las entradas/salidas del re
 
 #### R.F.01. Registro de los asistentes
 
-Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para comprar sus entradas y tener un contro de quien accede al festival.
+Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para comprar sus entradas y tener un control de quién accede al festival.
 
-**Prueba de aceptación**
-- Se intenta registrar un asistente con un correo electrónico o documento de identidad ya registrado: el sistema rechaza el registro.
-- Se intenta registrar dos asistentes con el mismo nombre y apellidos, pero con correos electrónicos y documentos de identidad distintos: el sistema permite ambos registros. 
-- Los asistentes deben ser mayores de edad (18 años o más).
-- Se debe aplicar la regla de negocio R.N.02.
-
+Se deben aplicar las reglas de negocio R.N.01 y R.N.02.
 
 #### R.F.02. Organización del festival
 
-Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participarán en dicho evento y las distintas zonas de escenario que habrá en el festival para tener el control de la asistencia de los artistas en cada festival además de los aforos en cada recinto y localización de los conciertos.
+Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participarán en dicho evento y las distintas zonas de escenario que habrá en el festival para tener el control de la asistencia de los artistas en cada festival, además de los aforos en cada recinto y la localización de los conciertos.
 
-**Prueba de aceptación**
-- Un artista no puede estar en más de un escenario a la misma hora, ni durante la duración del conciento a dicha hora. Además de que no podría estar el mismo día en dos festivales de diferentes localizaciones. 
-- Los asistentes al concierto no pueden superar el aforo del recinto.
-- Se deben aplicar las reglas de negocio R.N.06, R.N.07 y R.N.08.
+Se deben aplicar las reglas de negocio R.N.06 y R.N.08.
+
+La restricción que impide que un artista tenga actuaciones incompatibles por solapamiento horario debe recogerse en el modelo conceptual.
   
 
 #### R.F.03. Método de pago 
+
 Como comercio dentro del festival y como asistente al mismo quiero métodos de pago fiables y rápidos para no perder dinero y agilizar la compra venta en el festival.
 
-**Prueba de aceptación**
-- Debe tener saldo suficiente para hacer la compra.
-- Se deben aplicar las reglas de negocio R.N.09 y R.N.10.
+Se deben aplicar las reglas de negocio R.N.09 y R.N.10.
   
 
 #### R.F.04. Control de entrada 
-Como personal de control y acceso al festival quiero un método de identificación rápido para garantizar que el asistente tiene entrada y cumple los requisitos para entrar.
 
-**Prueba de aceptación**
-- Cuando pasa la entrada marca como "Entrada", una vez con eso la persona que entra no debe tener esa marca.
-- Debe entrar por la zona correcta que marque su entrada.
-- Su información identificadora debe ser válida.
-- Se debe aplicar la regla de negocio R.N.03., R.N.04, R.N.05.
+Como personal de control y acceso al festival quiero disponer de un método de identificación rápido para garantizar que el asistente tiene una entrada válida y cumple los requisitos necesarios para acceder al recinto.
+
+Se deben aplicar las reglas de negocio R.N.03, R.N.04 y R.N.05.
 
 ### R.F.05. Control de los artistas en cada festival
-Como promotor del festival quiero saber que artistas van a cada festival y cuantas veces para llevar el registro de dichos artistas.
 
-  **Prueba de aceptación**
-- Que el mismo artista no este en dos escenarios a la ver
-- Que el mismo artista no este en dos ciudades a la vez
+Como promotor del festival, quiero consultar qué artistas participan en cada festival y cuántas actuaciones realiza cada uno, para llevar un registro de su participación y organizar adecuadamente la programación.
 
-### R.F.06. Control de la organizació del festival 
-Como usuario y promotor del festival quiero saber las horas de cada actuación y los lugares correspondientes.
+La programación de los artistas debe respetar las siguientes condiciones:
 
- **Prueba de aceptación**
-- Quiero 
+- Se debe aplicar la regla de negocio R.N.08, que impide que un artista participe el mismo día en festivales situados en lugares diferentes.
+- La restricción que impide que un artista tenga actuaciones con horarios solapados debe recogerse en el modelo conceptual.
+  
+#### R.F.06. Consulta de la programación de los festivales
 
+Como promotor del festival, quiero consultar la programación de cada festival, incluyendo los artistas participantes, el número de actuaciones de cada artista, los horarios y los escenarios en los que actúan, para organizar y supervisar correctamente los eventos.
+
+Como asistente al festival, quiero consultar los horarios y la ubicación de las actuaciones de los artistas, para planificar mi visita y elegir los conciertos a los que quiero asistir.
 
 #### 4.1.1. Requisitos de información
 
@@ -253,9 +244,10 @@ La entrada debe ser válida, pertenecer al asistente y corresponder al festival 
 
 **Pruebas de aceptación**
 
-- La entrada cumple todas estas condiciones: supera esta comprobación y se revisan las demás reglas de acceso.
-- Se intenta acceder con una entrada de otro festival, de otra fecha o asociada a otra persona: en cada caso, el sistema rechaza el acceso.
-- Se presenta una entrada anulada o que no existe: el sistema rechaza el acceso.
+- Se acepta el acceso de un asistente que presenta una entrada válida, correspondiente al festival y a la fecha del evento, y que cumple las demás condiciones de acceso.
+- Se rechaza el acceso cuando la entrada no existe o no corresponde a ninguna entrada registrada en el sistema.
+- Se rechaza el acceso cuando la entrada corresponde a un festival distinto del que se está celebrando.
+- Se rechaza el acceso cuando la entrada corresponde a una fecha diferente de la del evento al que se intenta acceder.
 
 ##### R.N.04. Acceso a las zonas autorizadas
 
