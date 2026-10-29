@@ -171,7 +171,7 @@ quiero saber la siguiente información a la hora de organizar:
 
 Tanto como promotor del evento como personal de control y acceso quiero saber la siguiente información: 
 
-- Información sobre la identidad de los asistentes (nombres y apellidos, correo, documentación, etc).
+- Datos de identidad de los asistentes: nombre y apellidos, correo electrónico, edad, identificador o credencial asignada para el evento.
 
 - Control de todas las entradas/salidas de cada recinto.
 
