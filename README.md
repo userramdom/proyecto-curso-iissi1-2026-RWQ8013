@@ -80,48 +80,59 @@ Gestionar las entradas de los asistentes, control de las entradas/salidas del re
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Registro de los asistentes
 
-Como promotor de los festivales quiero que los asistentes se puedan registrar con sus datos personales para comprar sus entradas y tener un control de quién accede al festival.
+#### R.F.01. Registro de los asistentes
+Como asistente del festival, quiero poder registrarme proporcionando mis datos personales, como nombre y apellidos, correo electrónico y documento de identidad, para crear una cuenta en el sistema, poder comprar entradas y quedar identificado durante el evento.
 
 Se deben aplicar las reglas de negocio R.N.01 y R.N.02.
 
 #### R.F.02. Organización del festival
-
-Como promotor de los festivales quiero organizar los distintos recintos alrededor de España, a los artistas y patrocinadores que participarán en dicho evento y las distintas zonas de escenario que habrá en el festival para tener el control de la asistencia de los artistas en cada festival, además de los aforos en cada recinto y la localización de los conciertos.
+Como promotor de los festivales, quiero gestionar los distintos festivales que se celebran, incluyendo sus recintos, artistas, patrocinadores y escenarios, así como organizar las diferentes zonas del recinto y sus capacidades, para mantener toda la información del evento organizada y tener un control sobre los recursos disponibles.
 
 Se deben aplicar las reglas de negocio R.N.06 y R.N.08.
 
 La restricción que impide que un artista tenga actuaciones incompatibles por solapamiento horario debe recogerse en el modelo conceptual.
-  
 
-#### R.F.03. Método de pago 
+#### R.F.03. Gestión de métodos de pago
+Como asistente del festival, quiero poder realizar pagos dentro del recinto mediante los métodos de pago disponibles, como tarjeta, efectivo o sistema cashless, para comprar comida, bebida y otros productos de forma rápida y cómoda.
 
-Como comercio dentro del festival y como asistente al mismo quiero métodos de pago fiables y rápidos para no perder dinero y agilizar la compra venta en el festival.
+Como comercio dentro del festival, quiero poder registrar las compras realizadas por los asistentes, para llevar un control de las ventas y garantizar que los pagos se procesan correctamente.
 
 Se deben aplicar las reglas de negocio R.N.09 y R.N.10.
-  
 
-#### R.F.04. Control de entrada 
-
-Como personal de control y acceso al festival quiero disponer de un método de identificación rápido para garantizar que el asistente tiene una entrada válida y cumple los requisitos necesarios para acceder al recinto.
+#### R.F.04. Control de entrada
+Como personal de control y acceso al festival, quiero disponer de un sistema de identificación y validación de entradas que permita comprobar su validez, la identidad del asistente y los permisos asociados a cada tipo de entrada, para garantizar que únicamente accedan al recinto y a las zonas correspondientes las personas autorizadas.
 
 Se deben aplicar las reglas de negocio R.N.03, R.N.04 y R.N.05.
 
-### R.F.05. Control de los artistas en cada festival
-
+#### R.F.05. Control de los artistas en cada festival
 Como promotor del festival, quiero consultar qué artistas participan en cada festival y cuántas actuaciones realiza cada uno, para llevar un registro de su participación y organizar adecuadamente la programación.
 
 La programación de los artistas debe respetar las siguientes condiciones:
-
 - Se debe aplicar la regla de negocio R.N.08, que impide que un artista participe el mismo día en festivales situados en lugares diferentes.
 - La restricción que impide que un artista tenga actuaciones con horarios solapados debe recogerse en el modelo conceptual.
-  
-#### R.F.06. Consulta de la programación de los festivales
 
+#### R.F.06. Consulta de la programación de los festivales
 Como promotor del festival, quiero consultar la programación de cada festival, incluyendo los artistas participantes, el número de actuaciones de cada artista, los horarios y los escenarios en los que actúan, para organizar y supervisar correctamente los eventos.
 
-Como asistente al festival, quiero consultar los horarios y la ubicación de las actuaciones de los artistas, para planificar mi visita y elegir los conciertos a los que quiero asistir.
+Como asistente del festival, quiero consultar los horarios y la ubicación de las actuaciones de los artistas, para planificar mi visita y elegir los conciertos a los que quiero asistir.
+
+#### R.F.07. Compra de entradas
+Como asistente del festival, quiero poder consultar las entradas disponibles para cada evento, incluyendo sus diferentes tipos, precios y zonas de acceso, y seleccionar y comprar la que mejor se adapte a mis necesidades, para garantizar mi acceso al festival y disfrutar de las zonas incluidas en mi entrada.
+
+La información de las entradas compradas debe quedar asociada al asistente correspondiente y al festival para el que se ha realizado la compra.
+
+Se deben aplicar las reglas de negocio R.N.11 y R.N.12.
+
+#### R.F.08. Gestión de patrocinadores
+Como promotor del festival, quiero poder registrar, consultar y gestionar los patrocinadores que participan en cada evento, incluyendo sus datos identificativos y sus aportaciones económicas, para mantener organizada la información relacionada con la financiación y colaboración empresarial del festival.
+
+#### R.F.09. Consulta de servicios y distribución del recinto
+Como asistente del festival, quiero consultar la distribución del recinto y la ubicación de los diferentes servicios disponibles, como aseos, puntos de restauración, accesos y zonas de descanso, para orientarme dentro del festival y encontrar fácilmente los servicios que necesite.
+
+#### R.F.10. Control de ventas y actividad comercial
+Como promotor del festival, quiero consultar las ventas realizadas en los diferentes establecimientos y zonas del recinto, incluyendo los ingresos obtenidos, para supervisar la actividad comercial y realizar un seguimiento económico del evento
+
 
 #### 4.1.1. Requisitos de información
 
@@ -206,7 +217,7 @@ Como asistente al evento me gustaría saber:
 - Verificación de las transacciones.
 
 
-##### R.I.05. Información sobre financiación, presupuesto y patrocinios
+##### R.I.06. Información sobre financiación, presupuesto y patrocinios
 
 Como promotor/responsabl financero del festival quiero saber:
 
@@ -277,7 +288,7 @@ El número de asistentes que se encuentren dentro del recinto no puede superar e
 - Si el recinto ha alcanzado su aforo máximo, no se permitirá la entrada de más personas.
 - Cuando un asistente salga del recinto y se registre su salida, se actualizará el aforo disponible.
 
-##### R.N.08. Participación de los artistas en diferentes festivales
+##### R.N.07. Participación de los artistas en diferentes festivales
 
 Un artista no puede participar el mismo día en dos festivales que se celebren en lugares diferentes, ya que no podría asistir a ambas actuaciones.
 
@@ -286,7 +297,7 @@ Un artista no puede participar el mismo día en dos festivales que se celebren e
 - No se permitirá programar al mismo artista en dos festivales diferentes el mismo día si se celebran en lugares distintos.
 - Se podrá programar al artista en festivales diferentes si las fechas no coinciden.
 
-##### R.N.09. Saldo suficiente para realizar pagos
+##### R.N.08. Saldo suficiente para realizar pagos
 
 Para realizar una compra dentro del festival mediante el sistema de pago cashless, el asistente debe tener saldo suficiente en su cuenta. Si el saldo es inferior al importe de la compra, el pago no se realizará.
 
@@ -295,7 +306,7 @@ Para realizar una compra dentro del festival mediante el sistema de pago cashles
 - Si el saldo del asistente es inferior al importe de la compra, se rechazará el pago.
 - Cuando se realice una compra correctamente, se descontará del saldo el importe correspondiente.
 
-##### R.N.10. Actualización del saldo y registro de las operaciones
+##### R.N.09. Actualización del saldo y registro de las operaciones
 
 Cada vez que un asistente realice una recarga o un pago mediante el sistema cashless, se deberá actualizar su saldo y guardar la operación realizada para que pueda consultarla posteriormente.
 
@@ -303,6 +314,24 @@ Cada vez que un asistente realice una recarga o un pago mediante el sistema cash
 - Cuando se realice una recarga correctamente, se sumará el importe al saldo disponible del asistente.
 - Cuando se realice un pago correctamente, se restará el importe correspondiente del saldo.
 - Las recargas y los pagos realizados quedarán registrados en el historial de operaciones del asistente.
+
+##### R.N.10. Disponibilidad de entradas
+Cada entrada que se oferte para un festival debe tener un número limitado de unidades disponibles. El sistema no permitirá realizar compras cuando se haya alcanzado el límite de entradas establecido para ese tipo de entrada.
+
+**Pruebas de aceptación**
+- Si quedan entradas disponibles de un determinado tipo, el sistema permitirá realizar la compra.
+- Si se han agotado las entradas de un determinado tipo, el sistema no permitirá realizar nuevas compras de ese tipo.
+- Cuando se realice una compra correctamente, se actualizará el número de entradas disponibles.
+- Si se cancela una compra antes de confirmarse, las unidades reservadas volverán a estar disponibles.
+
+##### R.N.11. Compra única y asignación de entradas
+Cada entrada comprada debe quedar asociada a un único asistente y a un festival determinado. El sistema debe generar un identificador único para cada entrada, evitando que una misma entrada pueda asignarse a varios asistentes.
+
+**Pruebas de aceptación**
+- Cuando un asistente compra una entrada, esta queda asociada a su cuenta y al festival correspondiente.
+- El sistema no permitirá asignar el mismo identificador de entrada a dos asistentes diferentes.
+- Un asistente podrá comprar varias entradas, siempre que haya disponibilidad.
+- Cada entrada comprada tendrá un identificador que permitirá comprobar su validez durante el acceso al festival.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
