@@ -477,15 +477,12 @@ Como asistente al festival, quiero poder acceder a la plataforma desde diferente
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
+| Requisito / Regla | Clase: Asistente | Clase: Entrada | Clase: Recinto | Clase: Zona | Restricción: Edad `{edad >= 18}` | Restricción: Aforo `{asistentesPresentes <= aforoMax}` |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **R.I.03** (Información Asistentes) | **X** | | | | | |
+| **R.I.04** (Información Entradas) | | **X** | | **X** | | |
+| **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | |
+| **R.N.06** (Aforo máximo recinto) | | | **X** | | | **X** |
 
 -- fin entregable 2 --
 
