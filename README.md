@@ -89,7 +89,7 @@ Se deben aplicar las reglas de negocio R.N.01 y R.N.02.
 #### R.F.02. Organización del festival
 Como promotor de los festivales, quiero gestionar los distintos festivales que se celebran, incluyendo sus recintos, artistas, patrocinadores y escenarios, así como organizar las diferentes zonas del recinto y sus capacidades, para mantener toda la información del evento organizada y tener un control sobre los recursos disponibles.
 
-Se deben aplicar las reglas de negocio R.N.06 y R.N.08.
+Se deben aplicar las reglas de negocio R.N.06 y R.N.07.
 
 La restricción que impide que un artista tenga actuaciones incompatibles por solapamiento horario debe recogerse en el modelo conceptual.
 
@@ -114,7 +114,7 @@ Se deben aplicar las reglas de negocio R.N.03, R.N.04 y R.N.05.
 Como promotor del festival, quiero consultar qué artistas participan en cada festival y cuántas actuaciones realiza cada uno, para llevar un registro de su participación y organizar adecuadamente la programación.
 
 La programación de los artistas debe respetar las siguientes condiciones:
-- Se debe aplicar la regla de negocio R.N.08, que impide que un artista participe el mismo día en festivales situados en lugares diferentes.
+- Se debe aplicar la regla de negocio R.N.07, que impide que un artista participe el mismo día en festivales situados en lugares diferentes.
 - La restricción que impide que un artista tenga actuaciones con horarios solapados debe recogerse en el modelo conceptual.
 
 #### R.F.06. Consulta de la programación de los festivales
@@ -127,7 +127,7 @@ Como asistente del festival, quiero poder consultar las entradas disponibles par
 
 La información de las entradas compradas debe quedar asociada al asistente correspondiente y al festival para el que se ha realizado la compra.
 
-Se deben aplicar las reglas de negocio R.N.11 y R.N.12.
+Se deben aplicar las reglas de negocio R.N.10 y R.N.11.
 
 #### R.F.08. Gestión de patrocinadores
 Como promotor del festival, quiero poder registrar, consultar y gestionar los patrocinadores que participan en cada evento, incluyendo sus datos identificativos y sus aportaciones económicas, para mantener organizada la información relacionada con la financiación y colaboración empresarial del festival.
