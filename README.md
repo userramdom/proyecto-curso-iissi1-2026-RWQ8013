@@ -93,12 +93,17 @@ Se deben aplicar las reglas de negocio R.N.06 y R.N.08.
 
 La restricción que impide que un artista tenga actuaciones incompatibles por solapamiento horario debe recogerse en el modelo conceptual.
 
-#### R.F.03. Gestión de métodos de pago
-Como asistente del festival, quiero poder realizar pagos dentro del recinto mediante los métodos de pago disponibles, como tarjeta, efectivo o sistema cashless, para comprar comida, bebida y otros productos de forma rápida y cómoda.
+#### R.F.03. Gestión de saldo y métodos de pago
 
-Como comercio dentro del festival, quiero poder registrar las compras realizadas por los asistentes, para llevar un control de las ventas y garantizar que los pagos se procesan correctamente.
+Como asistente del festival, quiero consultar y recargar mi saldo cashless, para poder realizar compras dentro del recinto.
 
-Se deben aplicar las reglas de negocio R.N.09 y R.N.10.
+También quiero pagar mediante los métodos disponibles, como tarjeta, efectivo o sistema cashless, para comprar comida, bebida y otros productos.
+
+Como asistente, quiero consultar mi historial de recargas y pagos cashless, para llevar un control de mis gastos y comprobar las operaciones realizadas.
+
+Como comerciante del festival, quiero registrar las compras y sus pagos, para llevar un control de las ventas.
+
+Se deben aplicar las reglas de negocio R.N.08 y R.N.09 a las operaciones realizadas mediante el sistema cashless.
 
 #### R.F.04. Control de entrada
 Como personal de control y acceso al festival, quiero disponer de un sistema de identificación y validación de entradas que permita comprobar su validez, la identidad del asistente y los permisos asociados a cada tipo de entrada, para garantizar que únicamente accedan al recinto y a las zonas correspondientes las personas autorizadas.
@@ -335,32 +340,32 @@ Cada entrada comprada debe quedar asociada a un único asistente y a un festival
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
-El mapa organiza las historias de usuario en tres niveles. Arriba aparecen los objetivos o requisitos generales; debajo, los requisitos funcionales relacionados; y después, las historias que concretan las necesidades de los usuarios.
+En este mapa hemos agrupado las historias de usuario según los cinco objetivos generales del proyecto. Para cada objetivo indicamos los requisitos funcionales relacionados y las acciones que necesita realizar cada usuario.
 
-Un requisito funcional puede contribuir a más de un objetivo.
+La tabla resume esa relación y debajo se explican las historias con más detalle. Algunos requisitos aparecen en varios objetivos porque ayudan a cumplir más de uno.
 
 | Nivel | Organización de festivales | Entradas y accesos | Información y orientación | Saldo y pagos | Seguimiento del festival |
-| --- | --- | --- | --- | --- | --- |
-| **Objetivo general** | **R.G.01.** Gestión centralizada de los eventos y su programación. | **R.G.02.** Agilización del acceso. | **R.G.03.** Consulta de horarios y mapa en tiempo real. | **R.G.04.** Gestión de saldo y pagos cashless. | **R.G.05.** Monitorización de aforo y ventas por zona. |
-| **Requisitos funcionales** | **R.F.02:** organización del festival. **R.F.05:** consulta de participación de artistas. **R.F.06:** consulta de programación. **R.F.08:** gestión de patrocinadores. | **R.F.01:** registro de asistentes. **R.F.07:** compra de entradas. **R.F.04:** control de entrada. | **R.F.06:** consulta de programación. **R.F.09:** consulta de servicios y distribución del recinto. | **R.F.03:** gestión de métodos de pago. | **R.F.02:** organización y control de capacidades del festival. **R.F.10:** consulta de ventas y actividad comercial. |
-| **Historias de usuario** | Consultar recintos; organizar escenarios y zonas; consultar los artistas y su número de actuaciones; consultar la programación; gestionar patrocinadores y sus aportaciones. | Registrarse; consultar tipos, precios y disponibilidad de entradas; comprar una entrada; validar entradas; registrar entradas y salidas. | Consultar horarios y escenarios de las actuaciones; localizar accesos, aseos, restauración y zonas de descanso. | Consultar saldo; recargar saldo; realizar pagos; registrar compras; consultar el historial de operaciones. | Consultar la ocupación del recinto; consultar las ventas e ingresos por establecimiento y zona. |
+|---|---|---|---|---|---|
+| **Objetivo general** | R.G.01. Gestión centralizada de los eventos y su programación. | R.G.02. Agilización del acceso. | R.G.03. Consulta de horarios y mapa en tiempo real. | R.G.04. Gestión de saldo y pagos cashless. | R.G.05. Monitorización de aforo y ventas por zona. |
+| **Requisitos funcionales** | R.F.02: organización del festival. R.F.05: consulta de participación de artistas. R.F.06: consulta de programación. R.F.08: gestión de patrocinadores. | R.F.01: registro de asistentes. R.F.07: compra de entradas. R.F.04: control de entrada. | R.F.06: consulta de programación. R.F.09: consulta de servicios y distribución del recinto. | R.F.03: gestión de métodos de pago. | R.F.02: organización y control de capacidades del festival. R.F.10: consulta de ventas y actividad comercial. |
+| **Historias de usuario** | Consultar recintos; organizar escenarios y zonas; consultar los artistas y sus actuaciones; consultar la programación; gestionar patrocinadores y sus aportaciones. | Registrarse; consultar tipos, precios y disponibilidad de entradas; comprar una entrada; validar entradas; registrar entradas y salidas. | Consultar horarios y escenarios; localizar accesos, aseos, restauración y zonas de descanso. | Consultar saldo; recargar saldo; realizar pagos; registrar compras; consultar el historial de operaciones. | Consultar la ocupación del recinto y las ventas e ingresos por establecimiento y zona. |
 
-#### Historias agrupadas por objetivo
+#### Historias de cada objetivo
 
 ##### R.G.01. Organización de festivales
 
 - **R.F.02:** Como promotor, quiero consultar los recintos y organizar los escenarios y zonas de cada festival, para preparar su distribución.
-- **R.F.05:** Como promotor, quiero consultar los artistas que participan en un festival y cuántas actuaciones realiza cada uno, para conocer su participación.
-- **R.F.06:** Como promotor, quiero consultar la programación con artistas, horarios y escenarios, para supervisar las actuaciones.
-- **R.F.08:** Como promotor, quiero gestionar los datos y aportaciones de los patrocinadores, para organizar la financiación del festival.
+- **R.F.05:** Como promotor, quiero consultar qué artistas participan en un festival y cuántas actuaciones tiene cada uno, para conocer su participación.
+- **R.F.06:** Como promotor, quiero consultar la programación con los artistas, horarios y escenarios, para supervisar las actuaciones.
+- **R.F.08:** Como promotor, quiero gestionar los datos y las aportaciones de los patrocinadores, para organizar la financiación del festival.
 
 ##### R.G.02. Entradas y accesos
 
 - **R.F.01:** Como asistente, quiero registrarme con mis datos personales, para poder comprar entradas y quedar identificado.
-- **R.F.07:** Como asistente, quiero consultar los tipos de entrada, sus precios y las zonas que incluyen, para elegir cuál comprar.
-- **R.F.07:** Como asistente, quiero comprar una entrada y que quede asociada a mi cuenta y al festival, para poder asistir.
-- **R.F.04:** Como personal de control y acceso, quiero comprobar la entrada, la identidad del asistente y sus permisos, para autorizar el acceso.
-- **R.F.04:** Como personal de control y acceso, quiero registrar las entradas y salidas, para mantener actualizado quién está dentro del recinto.
+- **R.F.07:** Como asistente, quiero consultar los tipos de entrada disponibles, sus precios y las zonas que incluyen, para elegir cuál comprar.
+- **R.F.07:** Como asistente, quiero comprar una entrada que quede asociada a mi cuenta y al festival, para poder asistir.
+- **R.F.04:** Como personal de control y acceso, quiero comprobar la entrada, la identidad del asistente y las zonas a las que puede acceder, para autorizar su acceso.
+- **R.F.04:** Como personal de control y acceso, quiero registrar las entradas y salidas, para mantener actualizada la información de quién está dentro del recinto.
 
 ##### R.G.03. Información y orientación
 
@@ -371,14 +376,15 @@ Un requisito funcional puede contribuir a más de un objetivo.
 
 - **R.F.03:** Como asistente, quiero consultar mi saldo disponible, para saber cuánto puedo gastar.
 - **R.F.03:** Como asistente, quiero recargar mi saldo cashless, para poder realizar compras dentro del recinto.
-- **R.F.03:** Como asistente, quiero pagar mediante los métodos disponibles, para comprar comida, bebida u otros productos.
-- **R.F.03:** Como comercio, quiero registrar las compras y sus pagos, para llevar un control de las ventas.
-- **R.F.03:** Como asistente, quiero consultar el historial de recargas y pagos, para comprobar mis operaciones.
+- **R.F.03:** Como asistente, quiero pagar con los métodos disponibles, para comprar comida, bebida u otros productos.
+- **R.F.03:** Como comerciante, quiero registrar las compras y sus pagos, para llevar un control de las ventas.
+- **R.F.03:** Como asistente, quiero consultar mi historial de recargas y pagos, para comprobar mis operaciones.
 
 ##### R.G.05. Seguimiento del festival
 
-- **R.F.02:** Como promotor, quiero consultar cuántos asistentes están presentes y la capacidad del recinto, para supervisar su ocupación.
-- **R.F.10:** Como promotor, quiero consultar las ventas e ingresos por establecimiento y zona, para hacer un seguimiento de la actividad comercial.
+- **R.F.02:** Como promotor, quiero consultar cuántos asistentes hay dentro del recinto y cuál es su capacidad, para controlar su ocupación.
+- **R.F.10:** Como promotor, quiero consultar las ventas y los ingresos por establecimiento y zona, para hacer un seguimiento de la actividad comercial.
+  
 ### 4.3. Requisitos no funcionales (opcional)
 
 **R.N.F. 01. Seguridad y protección de los datos personales**
