@@ -462,6 +462,9 @@ La entrada E001 pertenece a Claudia. Se intenta asignar también a Ana sin quita
 | **R.I.04** (Información Entradas) | | **X** | | **X** | | |
 | **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | |
 | **R.N.06** (Aforo máximo recinto) | | | **X** | | | **X** |
+| **R.N.01** (Datos únicos de los asistentes) | **X** | | | | | |
+| **R.N.03** (Entrada válida y perteneciente al asistente) | **X** | **X** | | | | |
+| **R.N.04** (Acceso a las zonas autorizadas) | | **X** | | **X** | | |
 
 -- fin entregable 2 --
 
