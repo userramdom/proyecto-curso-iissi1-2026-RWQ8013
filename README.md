@@ -424,7 +424,28 @@ Como asistente al festival, quiero poder acceder a la plataforma desde diferente
 
 ### 5.2. Escenarios de prueba
 
-- con descripción textual y diagrama de objetos UML.
+#### Escenario 1. Asistente con entrada para la zona general
+
+**Descripción**
+
+Claudia Santamaría Pérez tiene 20 años y dispone de la entrada E001, con un precio de 45 euros y fecha del evento 10 de julio de 2027. La entrada es válida y permite acceder a la zona General, cuya capacidad es de 1000 personas.
+
+**Objetivo**
+
+Comprobar que se puede representar una asistente mayor de edad con una entrada asociada y la zona a la que permite acceder.
+
+**Resultado esperado**
+
+La situación representada cumple la condición de edad mínima. La entrada E001 pertenece a Claudia y está relacionada con la zona General como zona autorizada.
+
+Este ejemplo no representa el registro de un acceso ni comprueba el aforo disponible.
+
+**Requisitos relacionados:** R.I.03, R.I.04, R.N.02 y R.N.04.
+
+**Diagrama de objetos**
+
+<img width="552" height="487" alt="Escenario_1 drawio" src="https://github.com/user-attachments/assets/3ced40b5-6a3d-4176-af6c-28ab9f06786c" />
+
 
 ## 6. Matrices de trazabilidad
 
