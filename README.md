@@ -89,6 +89,8 @@ Se deben aplicar las reglas de negocio R.N.01 y R.N.02.
 #### R.F.02. Organización del festival
 Como promotor de los festivales, quiero gestionar los distintos festivales que se celebran, incluyendo sus recintos, artistas, patrocinadores y escenarios, así como organizar las diferentes zonas del recinto y sus capacidades, para mantener toda la información del evento organizada y tener un control sobre los recursos disponibles.
 
+Como promotor, quiero consultar el número de asistentes presentes y la capacidad del recinto, para controlar su ocupación.
+
 Se deben aplicar las reglas de negocio R.N.06 y R.N.07.
 
 La restricción que impide que un artista tenga actuaciones incompatibles por solapamiento horario debe recogerse en el modelo conceptual.
@@ -107,6 +109,8 @@ Se deben aplicar las reglas de negocio R.N.08 y R.N.09 a las operaciones realiza
 
 #### R.F.04. Control de entrada
 Como personal de control y acceso al festival, quiero disponer de un sistema de identificación y validación de entradas que permita comprobar su validez, la identidad del asistente y los permisos asociados a cada tipo de entrada, para garantizar que únicamente accedan al recinto y a las zonas correspondientes las personas autorizadas.
+
+Como personal de control y acceso, quiero registrar las entradas y salidas de los asistentes, para mantener actualizada la información de quién está dentro del recinto.
 
 Se deben aplicar las reglas de negocio R.N.03, R.N.04 y R.N.05.
 
@@ -185,9 +189,11 @@ quiero saber la siguiente información a la hora de organizar:
 
 ##### R.I.03. Informacion sobre los asistentes a los festivales  
 
-Tanto como promotor del evento como personal de control y acceso quiero saber la siguiente información: 
+- Datos de identidad de los asistentes: nombre y apellidos, documento de identidad, correo electrónico, edad e identificador o credencial asignada para el evento.
 
-- Datos de identidad de los asistentes: nombre y apellidos, correo electrónico, edad, identificador o credencial asignada para el evento.
+- Tipo de entrada adquirida y zonas a las que permite acceder.
+
+- Métodos de pago utilizados por el asistente.
 
 - Control de todas las entradas/salidas de cada recinto.
 
@@ -260,6 +266,7 @@ La entrada debe ser válida, pertenecer al asistente y corresponder al festival 
 
 **Pruebas de aceptación**
 
+- Se rechaza el acceso cuando la entrada pertenece a otro asistente.
 - Se acepta el acceso de un asistente que presenta una entrada válida, correspondiente al festival y a la fecha del evento, y que cumple las demás condiciones de acceso.
 - Se rechaza el acceso cuando la entrada no existe o no corresponde a ninguna entrada registrada en el sistema.
 - Se rechaza el acceso cuando la entrada corresponde a un festival distinto del que se está celebrando.
@@ -347,7 +354,7 @@ La tabla resume esa relación y debajo se explican las historias con más detall
 | Nivel | Organización de festivales | Entradas y accesos | Información y orientación | Saldo y pagos | Seguimiento del festival |
 |---|---|---|---|---|---|
 | **Objetivo general** | R.G.01. Gestión centralizada de los eventos y su programación. | R.G.02. Agilización del acceso. | R.G.03. Consulta de horarios y mapa en tiempo real. | R.G.04. Gestión de saldo y pagos cashless. | R.G.05. Monitorización de aforo y ventas por zona. |
-| **Requisitos funcionales** | R.F.02: organización del festival. R.F.05: consulta de participación de artistas. R.F.06: consulta de programación. R.F.08: gestión de patrocinadores. | R.F.01: registro de asistentes. R.F.07: compra de entradas. R.F.04: control de entrada. | R.F.06: consulta de programación. R.F.09: consulta de servicios y distribución del recinto. | R.F.03: gestión de métodos de pago. | R.F.02: organización y control de capacidades del festival. R.F.10: consulta de ventas y actividad comercial. |
+| **Requisitos funcionales** | R.F.02: organización del festival. R.F.05: consulta de participación de artistas. R.F.06: consulta de programación. R.F.08: gestión de patrocinadores. | R.F.01: registro de asistentes. R.F.07: compra de entradas. R.F.04: control de entrada. | R.F.06: consulta de programación. R.F.09: consulta de servicios y distribución del recinto. | R.F.03: gestión de saldo y métodos de pago. | R.F.02: organización y control de capacidades del festival. R.F.10: consulta de ventas y actividad comercial. |
 | **Historias de usuario** | Consultar recintos; organizar escenarios y zonas; consultar los artistas y sus actuaciones; consultar la programación; gestionar patrocinadores y sus aportaciones. | Registrarse; consultar tipos, precios y disponibilidad de entradas; comprar una entrada; validar entradas; registrar entradas y salidas. | Consultar horarios y escenarios; localizar accesos, aseos, restauración y zonas de descanso. | Consultar saldo; recargar saldo; realizar pagos; registrar compras; consultar el historial de operaciones. | Consultar la ocupación del recinto y las ventas e ingresos por establecimiento y zona. |
 
 #### Historias de cada objetivo
