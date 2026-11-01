@@ -426,19 +426,11 @@ Como asistente al festival, quiero poder acceder a la plataforma desde diferente
 
 #### Escenario 1. Asistente con entrada para la zona general
 
-**Descripción**
+Claudia tiene 20 años y una entrada válida, E001, que permite acceder a la zona General.
 
-Claudia Santamaría Pérez tiene 20 años y dispone de la entrada E001, con un precio de 45 euros y fecha del evento 10 de julio de 2027. La entrada es válida y permite acceder a la zona General, cuya capacidad es de 1000 personas.
+**Qué comprobamos:** que podemos relacionar a una asistente mayor de edad con su entrada y la zona autorizada.
 
-**Objetivo**
-
-Comprobar que se puede representar una asistente mayor de edad con una entrada asociada y la zona a la que permite acceder.
-
-**Resultado esperado**
-
-La situación representada cumple la condición de edad mínima. La entrada E001 pertenece a Claudia y está relacionada con la zona General como zona autorizada.
-
-Este ejemplo no representa el registro de un acceso ni comprueba el aforo disponible.
+**Resultado esperado:** la situación es válida para las condiciones representadas: Claudia cumple la edad mínima y su entrada está asociada a la zona General.
 
 **Requisitos relacionados:** R.I.03, R.I.04, R.N.02 y R.N.04.
 
@@ -446,6 +438,19 @@ Este ejemplo no representa el registro de un acceso ni comprueba el aforo dispon
 
 <img width="552" height="487" alt="Escenario_1 drawio" src="https://github.com/user-attachments/assets/3ced40b5-6a3d-4176-af6c-28ab9f06786c" />
 
+#### Escenario 2. Una misma entrada asignada a dos asistentes
+
+La entrada E001 pertenece a Claudia. Se intenta asignar también a Ana sin quitar su relación con Claudia. El diagrama muestra esta situación no válida.
+
+**Qué comprobamos:** que una entrada no puede pertenecer a dos asistentes a la vez.
+
+**Resultado esperado:** se rechaza la asignación a Ana y la entrada sigue perteneciendo únicamente a Claudia, como establece R.N.11.
+
+**Requisitos relacionados:** R.F.07 y R.N.11.
+
+**Diagrama de objetos**
+
+<img width="761" height="487" alt="escenario 2 entrada drawio" src="https://github.com/user-attachments/assets/a5f70e5e-4125-4fd7-9d77-a59e5084a094" />
 
 ## 6. Matrices de trazabilidad
 
