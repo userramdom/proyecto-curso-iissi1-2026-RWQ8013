@@ -424,15 +424,15 @@ Como asistente al festival, quiero poder acceder a la plataforma desde diferente
 
 ### 5.2. Escenarios de prueba
 
-#### Escenario 1. Asistente con entrada para la zona general
+#### Escenario 1. Entrada asociada a una zona autorizada
 
-Claudia tiene 20 años y una entrada válida, E001, que permite acceder a la zona General.
+Claudia tiene la entrada E001, que permite acceder a la zona General.
 
-**Qué comprobamos:** que podemos relacionar a una asistente mayor de edad con su entrada y la zona autorizada.
+**Qué comprobamos:** que el modelo permite representar a quién pertenece una entrada y qué zona tiene autorizada.
 
-**Resultado esperado:** la situación es válida para las condiciones representadas: Claudia cumple la edad mínima y su entrada está asociada a la zona General.
+**Resultado esperado:** la entrada E001 está asociada a Claudia y permite acceder a la zona General.
 
-**Requisitos relacionados:** R.I.03, R.I.04, R.N.02 y R.N.04.
+**Requisitos relacionados:** R.I.03, R.I.04 y R.N.04.
 
 **Diagrama de objetos**
 
