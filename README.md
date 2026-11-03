@@ -452,6 +452,33 @@ La entrada E001 pertenece a Claudia. Se intenta asignar también a Ana sin quita
 
 <img width="761" height="487" alt="escenario 2 entrada drawio" src="https://github.com/user-attachments/assets/a5f70e5e-4125-4fd7-9d77-a59e5084a094" />
 
+#### Escenario 3. Asistente que no cumple la edad mínima
+
+Beatriz tiene 17 años y solicita entrar al festival con una entrada válida, E003. Aunque la entrada esta correctamente registrada, Beatriz no cumple la edad mínima de 18 años establecida para poder asistir al festival.
+
+**Qué comprobamos:** que el sistema no permita el acceso a asistentes que no cumplan la restricción de edad mínima.
+
+**Resultado esperado:** se rechaza el acceso de Beatriz porque tiene menos de 18 años, aunque disponga de una entrada válida.
+
+**Requisitos relacionados:** R.I.03 y R.N.02.
+
+**Diagrama de objetos** 
+
+<img width="486" height="447" alt="Escenario3 drawio" src="https://github.com/user-attachments/assets/f82fe1da-0275-46ee-a5cd-18e19dd8d036" />
+
+
+### Escenario 4. Recinto que ha alcanzado el aforo máximo
+
+El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se encuentran 1000 asistentes en su interior. Jorge tiene una entrada válida e intenta acceder al recinto, pero ya se ha alcanzado el límite permitido.
+
+**Qué comprobamos:** que el sistema impida la entrada de nuevos asistentes cuando el recinto haya alcanzado su aforo máximo.
+
+**Resultado esperado:** se rechaza la entrada de Jorge hasta que se registre la salida de otro asistente y vuelva a existir aforo disponible.
+
+**Requisitos relacionados:** R.I.05 y R.N.06.
+
+**Diagrama de objetos**
+
 ## 6. Matrices de trazabilidad
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
