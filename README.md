@@ -464,8 +464,6 @@ Beatriz tiene 17 años y solicita entrar al festival con una entrada válida, E0
 
 **Diagrama de objetos** 
 
-<img width="486" height="447" alt="Escenario3 drawio" src="https://github.com/user-attachments/assets/f82fe1da-0275-46ee-a5cd-18e19dd8d036" />
-
 
 ### Escenario 4. Recinto que ha alcanzado el aforo máximo
 
@@ -477,7 +475,10 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 **Requisitos relacionados:** R.I.05 y R.N.06.
 
-**Diagrama de objetos**
+**Diagrama de objetos** 
+
+
+
 
 ## 6. Matrices de trazabilidad
 
