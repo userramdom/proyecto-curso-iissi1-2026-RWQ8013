@@ -488,13 +488,13 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **R.I.03** (Información Asistentes) | **X** | | | | | | | | | | | |
 | **R.I.04** (Información Entradas) | | **X** | | **X** | | | | | | | | |
-| **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**||**X**| 
+| **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**|**X**| 
 | **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | | | | | | | |
 | **R.N.01** (Datos únicos de los asistentes) | **X** | | | | | | | | | | | |
 | **R.N.03** (Entrada válida y perteneciente al asistente) | **X** | **X** | | | | | | | | | | |
 | **R.N.04** (Acceso a las zonas autorizadas) | | **X** | | **X** | | | | | | | | | |
 | **R.N.06** (Aforo máximo recinto) | | | **X** | | | **X** | | | | | | | | |
-| **R.N.08** (Saldo suficiente para realizar pagos) |**X**| | | | | | | | | 
+| **R.N.08** (Saldo suficiente para realizar pagos) |**X**| | | | | | |**X**|
 | **R.N.09** (Actualización del saldo y registro de operaciones) |**X**| | | | | | | |**X**|
 | **R.N.10** (Disponibilidad de entradas) | |**X**| | | | |**X**| | |
 | **R.N.11** (Asignación única de entradas) | **X** | **X** | | | | | | | | | | |
