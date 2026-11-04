@@ -487,13 +487,17 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 | Requisito / Regla | Clase: Asistente | Clase: Entrada | Clase: Recinto | Clase: Zona | Restricción: Edad `{edad >= 18}` | Restricción: Aforo `{asistentesPresentes <= aforoMax}` | clase: TipoEntrada| clase: Comercio| clase: Venta|
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **R.I.01** (Información Festival) | |**X**|**X**|**X**| | | | | | |**X**|**X**|
+| **R.I.02** (Información Aforo) |**X**| | | | | | | | | | | |
 | **R.I.03** (Información Asistentes) |**X**| | | | | | | | | | | |
 | **R.I.04** (Información Entradas) | |**X**| | **X** | | | | | | | | |
 | **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**|**X**| 
+| **R.I.06** (Financiacion y patrocinios) |**X**| | | | | | | | | | | |
 | **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | | | | | | | |
 | **R.N.01** (Datos únicos de los asistentes) | **X** | | | | | | | | | | | |
 | **R.N.03** (Entrada válida y perteneciente al asistente) | **X** | **X** | | | | | | | | | | |
 | **R.N.04** (Acceso a las zonas autorizadas) | | **X** | | **X** | | | | | | | | | |
+| **R.N.05** (Registro de entrada y salida) |**X**| | | | | | | | | | | |
 | **R.N.06** (Aforo máximo recinto) | | | **X** | | | **X** | | | | | | | | |
 | **R.N.08** (Saldo suficiente para realizar pagos) |**X**| | | | | | | |**X**|
 | **R.N.09** (Actualización del saldo y registro de operaciones) |**X**| | | | | | | |**X**|
