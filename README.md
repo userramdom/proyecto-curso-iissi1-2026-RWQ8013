@@ -483,27 +483,25 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 ## 6. Matrices de trazabilidad
 
-- Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
-
-| Requisito / Regla | Clase: Asistente | Clase: Entrada | Clase: Recinto | Clase: Zona | Restricción: Edad `{edad >= 18}` | Restricción: Aforo `{asistentesPresentes <= aforoMax}` | clase: TipoEntrada| clase: Comercio| clase: Venta|
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **R.I.01** (Información Festival) | |**X**|**X**|**X**| | | | | | | | |
-| **R.I.02** (Información Aforo) | | |**X**|**X**| |**X**| | |**X**| |**X**| |
-| **R.I.03** (Información Asistentes) |**X**| | | | | | | | | | | |
-| **R.I.04** (Información Entradas) | |**X**| | **X** | | | | | | | | |
-| **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**|**X**| 
-| **R.I.06** (Financiacion y patrocinios) | | | | | | | | | | | |**X**|
-| **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | | | | | | | |
-| **R.N.01** (Datos únicos de los asistentes) | **X** | | | | | | | | | | | |
-| **R.N.03** (Entrada válida y perteneciente al asistente) | **X** | **X** | | | | | | | | | | |
-| **R.N.04** (Acceso a las zonas autorizadas) | | **X** | | **X** | | | | | | | | | |
-| **R.N.05** (Registro de entrada y salida) |**X**|**X**|**X**| | | | | | | |**X**| |
-| **R.N.06** (Aforo máximo recinto) | | | **X** | | | **X** | | | | | | | | |
-| **R.N.07** (Participacion de artistas) | | |**X**| |**X**|**X**| | | |
-| **R.N.08** (Saldo suficiente para realizar pagos) |**X**| | | | | | | |**X**|
-| **R.N.09** (Actualización del saldo y registro de operaciones) |**X**| | | | | | | |**X**|
-| **R.N.10** (Disponibilidad de entradas) | |**X**| | | | |**X**| | |
-| **R.N.11** (Asignación única de entradas) | **X** | **X** | | | | | | | | | | |
+| Requisito / Regla | Asistente | Entrada | Recinto | Zona | Restricción: Edad | Restricción: Aforo | TipoEntrada | Comercio | Venta | Festival | Escenario | Artistas | Actuacion | Patrocinador | Patrocinio | RegistroAcceso | TransaccionCashless | Recarga | Relación Asistente–Entrada | Relación Festival–Entrada | Relación Entrada–Zona | Restricción: DNI y email únicos |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **R.I.01. Información del festival** | | | X | X | | | | X | | X | X | X | X | | | | | | | | | |
+| **R.I.02. Capacidad y distribución** | | | X | X | | | | X | | | X | | | | | | | | | | | |
+| **R.I.03. Información de asistentes** | X | X | X | X | | | X | | | | | | | | | X | | | X | | X | |
+| **R.I.04. Entradas y accesos** | | X | X | X | | | X | | | | | | | | | X | | | | | X | |
+| **R.I.05. Pagos y comercios** | X | | | | | | | X | X | | | | | | | | X | X | | | | |
+| **R.I.06. Financiación y patrocinios** | | | | | | | | X | X | X | | | | X | X | | | | | | | |
+| **R.N.01. Datos únicos de asistentes** | X | | | | | | | | | | | | | | | | | | | | | X |
+| **R.N.02. Edad mínima** | X | | | | X | | | | | | | | | | | | | | | | | |
+| **R.N.03. Entrada válida** | X | X | | | | | | | | X | | | | | | X | | | X | X | | |
+| **R.N.04. Zonas autorizadas** | | X | | X | | | X | | | | | | | | | | | | | | X | |
+| **R.N.05. Entradas y salidas** | X | | X | | | | | | | | | | | | | X | | | | | | |
+| **R.N.06. Control del aforo** | | | X | | | X | | | | | | | | | | X | | | | | | |
+| **R.N.07. Participación de artistas** | | | X | X | | | | | | X | X | X | X | | | | | | | | | |
+| **R.N.08. Saldo suficiente** | X | | | | | | | | X | | | | | | | | X | | | | | |
+| **R.N.09. Actualización y registro del saldo** | X | | | | | | | | X | | | | | | | | X | X | | | | |
+| **R.N.10. Disponibilidad de entradas** | | X | | | | | X | | | | | | | | | | | | | | | |
+| **R.N.11. Asignación única de entradas** | X | X | | | | | | | | X | | | | | | | | | X | X | | |
 
 -- fin entregable 2 --
 
