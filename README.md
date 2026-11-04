@@ -467,7 +467,7 @@ Beatriz tiene 17 años y solicita entrar al festival con una entrada válida, E0
 
 <img width="491" height="481" alt="Escenario3definitivo1 drawio" src="https://github.com/user-attachments/assets/468be8c2-df7b-4e0b-ba2e-8a54537ffc92" />
 
-### Escenario 4. Recinto que ha alcanzado el aforo máximo
+#### Escenario 4. Recinto que ha alcanzado el aforo máximo
 
 El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se encuentran 1000 asistentes en su interior. Jorge tiene una entrada válida e intenta acceder al recinto, pero ya se ha alcanzado el límite permitido.
 
@@ -475,7 +475,7 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 **Resultado esperado:** se rechaza la entrada de Jorge hasta que se registre la salida de otro asistente y vuelva a existir aforo disponible.
 
-**Requisitos relacionados:** R.I.05 y R.N.06.
+**Requisitos relacionados:** R.I.02 y R.N.06.
 
 **Diagrama de objetos** 
 
