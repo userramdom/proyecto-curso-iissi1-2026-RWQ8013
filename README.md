@@ -486,8 +486,8 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 | Requisito / Regla | Clase: Asistente | Clase: Entrada | Clase: Recinto | Clase: Zona | Restricción: Edad `{edad >= 18}` | Restricción: Aforo `{asistentesPresentes <= aforoMax}` | clase: TipoEntrada| clase: Comercio| clase: Venta|
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **R.I.03** (Información Asistentes) | **X** | | | | | | | | | | | |
-| **R.I.04** (Información Entradas) | | **X** | | **X** | | | | | | | | |
+| **R.I.03** (Información Asistentes) |**X**| | | | | | | | | | | |
+| **R.I.04** (Información Entradas) | |**X**| | **X** | | | | | | | | |
 | **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**|**X**| 
 | **R.N.02** (Edad mínima 18 años) | **X** | | | | **X** | | | | | | | |
 | **R.N.01** (Datos únicos de los asistentes) | **X** | | | | | | | | | | | |
