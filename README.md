@@ -487,8 +487,8 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 
 | Requisito / Regla | Clase: Asistente | Clase: Entrada | Clase: Recinto | Clase: Zona | Restricción: Edad `{edad >= 18}` | Restricción: Aforo `{asistentesPresentes <= aforoMax}` | clase: TipoEntrada| clase: Comercio| clase: Venta|
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **R.I.01** (Información Festival) | |**X**|**X**|**X**| | | | | | |**X**|**X**|
-| **R.I.02** (Información Aforo) |**X**| | | | | | | | | | | |
+| **R.I.01** (Información Festival) | |**X**|**X**|**X**| | | | | | | | |
+| **R.I.02** (Información Aforo) | | |**X**|**X**| |**X**| | |**X**| |**X**| |
 | **R.I.03** (Información Asistentes) |**X**| | | | | | | | | | | |
 | **R.I.04** (Información Entradas) | |**X**| | **X** | | | | | | | | |
 | **R.I.05** (Pagos y comercios) |**X**| | | | | | |**X**|**X**| 
