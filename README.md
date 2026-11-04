@@ -500,7 +500,7 @@ El recinto Principal tiene un aforo máximo de 1000 personas y actualmente se en
 | **R.N.07. Participación de artistas** | | | X | X | | | | | | X | X | X | X | | | | | | | | | |
 | **R.N.08. Saldo suficiente** | X | | | | | | | | X | | | | | | | | X | | | | | |
 | **R.N.09. Actualización y registro del saldo** | X | | | | | | | | X | | | | | | | | X | X | | | | |
-| **R.N.10. Disponibilidad de entradas** | | X | | | | | X | | | | | | | | | | | | | | | |
+| **R.N.10. Disponibilidad de entradas** | | X | | | | | X | | | | | | | | | | | | | | X | |
 | **R.N.11. Asignación única de entradas** | X | X | | | | | | | | X | | | | | | | | | X | X | | |
 
 -- fin entregable 2 --
