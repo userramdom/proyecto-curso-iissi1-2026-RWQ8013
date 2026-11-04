@@ -418,7 +418,7 @@ Como asistente al festival, quiero poder acceder a la plataforma desde diferente
 
 ### 5.1. Diagramas de clases UML
 
-<img width="812" height="1098" alt="Diagrama_clases drawio" src="https://github.com/user-attachments/assets/113f6f3d-608f-4a65-84a0-755610284eb9" />
+<img width="822" height="1098" alt="Diagrama_clases drawio(1)" src="https://github.com/user-attachments/assets/70272bf8-a1cd-45f4-b8eb-0e9c5b119c07" />
 
 
 
